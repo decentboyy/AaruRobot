@@ -5,9 +5,9 @@ import time
 from functools import partial
 from contextlib import suppress
 
-import AyraRobot.modules.sql.welcome_sql as sql
-import AyraRobot
-from AyraRobot import (
+import AaruRobot.modules.sql.welcome_sql as sql
+import AaruRobot
+from AaruRobot import (
     DEV_USERS,
     LOGGER,
     OWNER_ID,
@@ -19,18 +19,18 @@ from AyraRobot import (
     dispatcher,
     JOIN_LOGGER
 )
-from AyraRobot.modules.helper_funcs.chat_status import (
+from AaruRobot.modules.helper_funcs.chat_status import (
     is_user_ban_protected,
     user_admin,
 )
-from AyraRobot.modules.helper_funcs.misc import build_keyboard, revert_buttons
-from AyraRobot.modules.helper_funcs.msg_types import get_welcome_type
-from AyraRobot.modules.helper_funcs.string_handling import (
+from AaruRobot.modules.helper_funcs.misc import build_keyboard, revert_buttons
+from AaruRobot.modules.helper_funcs.msg_types import get_welcome_type
+from AaruRobot.modules.helper_funcs.string_handling import (
     escape_invalid_curly_brackets,
     markdown_parser,
 )
-from AyraRobot.modules.log_channel import loggable
-from AyraRobot.modules.sql.global_bans_sql import is_user_gbanned
+from AaruRobot.modules.log_channel import loggable
+from AaruRobot.modules.sql.global_bans_sql import is_user_gbanned
 from telegram import (
     ChatPermissions,
     InlineKeyboardButton,
