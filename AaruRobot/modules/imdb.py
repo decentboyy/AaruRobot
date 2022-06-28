@@ -1,11 +1,11 @@
-from AyraRobot import telethn as tbot
+from AaruRobot import telethn as tbot
 import os
 import re
 import bs4
 import requests
 from telethon import types
 from telethon.tl import functions
-from AyraRobot.events import register
+from AaruRobot.events import register
 
 langi = "en"
 
