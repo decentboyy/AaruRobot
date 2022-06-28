@@ -9,20 +9,20 @@ from telegram.utils.helpers import mention_html
 
 from alphabet_detector import AlphabetDetector
 
-import AyraRobot.modules.sql.locks_sql as sql
-from AyraRobot import dispatcher, DRAGONS, LOGGER
-from AyraRobot.modules.disable import DisableAbleCommandHandler
-from AyraRobot.modules.helper_funcs.chat_status import (
+import AaruRobot.modules.sql.locks_sql as sql
+from AaruRobot import dispatcher, DRAGONS, LOGGER
+from AaruRobot.modules.disable import DisableAbleCommandHandler
+from AaruRobot.modules.helper_funcs.chat_status import (
     can_delete,
     is_user_admin,
     user_not_admin,
     is_bot_admin,
     user_admin,
 )
-from AyraRobot.modules.log_channel import loggable
-from AyraRobot.modules.connection import connected
-from AyraRobot.modules.sql.approve_sql import is_approved
-from AyraRobot.modules.helper_funcs.alternate import send_message, typing_action
+from AaruRobot.modules.log_channel import loggable
+from AaruRobot.modules.connection import connected
+from AaruRobot.modules.sql.approve_sql import is_approved
+from AaruRobot.modules.helper_funcs.alternate import send_message, typing_action
 
 ad = AlphabetDetector()
 
