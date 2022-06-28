@@ -3,7 +3,7 @@ from functools import wraps
 
 from telegram.ext import CallbackContext
 
-from AyraRobot.modules.helper_funcs.misc import is_module_loaded
+from AaruRobot.modules.helper_funcs.misc import is_module_loaded
 
 FILENAME = __name__.rsplit(".", 1)[-1]
 
@@ -13,9 +13,9 @@ if is_module_loaded(FILENAME):
     from telegram.ext import CommandHandler, JobQueue, run_async
     from telegram.utils.helpers import escape_markdown
 
-    from AyraRobot import EVENT_LOGS, LOGGER, dispatcher
-    from AyraRobot.modules.helper_funcs.chat_status import user_admin
-    from AyraRobot.modules.sql import log_channel_sql as sql
+    from AaruRobot import EVENT_LOGS, LOGGER, dispatcher
+    from AaruRobot.modules.helper_funcs.chat_status import user_admin
+    from AaruRobot.modules.sql import log_channel_sql as sql
 
     def loggable(func):
         @wraps(func)
