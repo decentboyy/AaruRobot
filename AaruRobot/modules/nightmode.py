@@ -1,10 +1,10 @@
-from AyraRobot.modules.sql_extended.night_mode_sql import add_nightmode, rmnightmode, get_all_chat_id, is_nightmode_indb
+from AaruRobot.modules.sql_extended.night_mode_sql import add_nightmode, rmnightmode, get_all_chat_id, is_nightmode_indb
 from telethon.tl.types import ChatBannedRights
 from apscheduler.schedulers.asyncio import AsyncIOScheduler 
 from telethon import functions
 from telethon import types
-from AyraRobot.events import register
-from AyraRobot import telethn as tbot
+from AaruRobot.events import register
+from AaruRobot import telethn as tbot
 import os
 
 
