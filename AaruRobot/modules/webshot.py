@@ -1,8 +1,8 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from AyraRobot import pbot as app
-from AyraRobot.utils.errors import capture_err
+from AaruRobot import pbot as app
+from AaruRobot.utils.errors import capture_err
 __help__ = """
 » /webss *:* Sends the screenshot of the given url.
 """
