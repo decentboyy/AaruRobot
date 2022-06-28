@@ -1,8 +1,8 @@
 import os
-from AyraRobot import telethn as tbot
+from AaruRobot import telethn as tbot
 from geopy.geocoders import Nominatim
-from AyraRobot.events import register
-from AyraRobot import *
+from AaruRobot.events import register
+from AaruRobot import *
 from telethon import *
 from telethon.tl import *
 
