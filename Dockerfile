@@ -69,7 +69,7 @@ RUN git clone -b shiken https://github.com/BANNA-XD143/AaruRobot /root/AaruRobot
 WORKDIR /root/AaruRobot
 
 #Copy config file to /root/AaruRobot/AaruRobot
-COPY ./FallenRobot/sample_config.py ./AaruRobot/config.py* /root/AaruRobot/FallenRobot/
+COPY ./FallenRobot/sample_config.py ./AaruRobot/config.py* /root/AaruRobot/AaruRobot/
 
 ENV PATH="/home/bot/bin:$PATH"
 
