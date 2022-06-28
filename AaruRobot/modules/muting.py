@@ -1,20 +1,20 @@
 import html
 from typing import Optional
 
-from AyraRobot import LOGGER, TIGERS, dispatcher
-from AyraRobot.modules.helper_funcs.chat_status import (
+from AaruRobot import LOGGER, TIGERS, dispatcher
+from AaruRobot.modules.helper_funcs.chat_status import (
     bot_admin,
     can_restrict,
     connection_status,
     is_user_admin,
     user_admin,
 )
-from AyraRobot.modules.helper_funcs.extraction import (
+from AaruRobot.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from AyraRobot.modules.helper_funcs.string_handling import extract_time
-from AyraRobot.modules.log_channel import loggable
+from AaruRobot.modules.helper_funcs.string_handling import extract_time
+from AaruRobot.modules.log_channel import loggable
 from telegram import Bot, Chat, ChatPermissions, ParseMode, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, run_async
