@@ -7,10 +7,10 @@ from pykeyboard import InlineKeyboard
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton
 
-from AyraRobot import aiohttpsession as session
-from AyraRobot import pbot as app
-from AyraRobot.utils.errors import capture_err
-from AyraRobot.utils.pastebin import paste
+from AaruRobot import aiohttpsession as session
+from AaruRobot import pbot as app
+from AaruRobot.utils.errors import capture_err
+from AaruRobot.utils.pastebin import paste
 
 pattern = re.compile(
     r"^text/|json$|yaml$|xml$|toml$|x-sh$|x-shellscript$"
