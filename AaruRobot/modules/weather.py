@@ -1,4 +1,4 @@
-from AyraRobot import telethn as tbot
+from AaruRobot import telethn as tbot
 import io
 import os
 import time
@@ -9,9 +9,9 @@ from telethon.tl import functions
 from telethon.tl import types
 from telethon.tl.types import *
 
-from AyraRobot import *
+from AaruRobot import *
 
-from AyraRobot.events import register
+from AaruRobot.events import register
 
 
 async def is_register_admin(chat, user):
