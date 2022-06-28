@@ -2,9 +2,9 @@ import sre_constants
 
 import regex
 import telegram
-from AyraRobot import LOGGER, dispatcher
-from AyraRobot.modules.disable import DisableAbleMessageHandler
-from AyraRobot.modules.helper_funcs.regex_helper import infinite_loop_check
+from AaruRobot import LOGGER, dispatcher
+from AaruRobot.modules.disable import DisableAbleMessageHandler
+from AaruRobot.modules.helper_funcs.regex_helper import infinite_loop_check
 from telegram import Update
 from telegram.ext import CallbackContext, Filters, run_async
 
