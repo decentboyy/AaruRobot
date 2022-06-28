@@ -2,8 +2,8 @@ from emoji import UNICODE_EMOJI
 from telegram import  Update, ParseMode 
 from telegram.ext import CallbackContext
 from gpytranslate import SyncTranslator
-from AyraRobot import dispatcher
-from AyraRobot.modules.disable import DisableAbleCommandHandler
+from AaruRobot import dispatcher
+from AaruRobot.modules.disable import DisableAbleCommandHandler
 trans = SyncTranslator()
  
 def totranslate(update: Update, context: CallbackContext) -> None:
