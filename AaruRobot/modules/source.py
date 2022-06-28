@@ -27,7 +27,7 @@ async def repo(client, message):
             [
                 [
                     InlineKeyboardButton(
-                        "• ᴏᴡɴᴇʀ •", url="tg://user?id=5489344295"), 
+                        "• ᴅᴇᴠᴇʟᴏᴘᴇʀ •", url="tg://user?id=5489344295"), 
                     InlineKeyboardButton(
                         "• sᴏᴜʀᴄᴇ •", url="https://github.com/BANNA-XD143/AaruRobot")
                 ]
