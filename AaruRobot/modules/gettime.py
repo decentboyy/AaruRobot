@@ -2,8 +2,8 @@ import datetime
 from typing import List
 
 import requests
-from AyraRobot import TIME_API_KEY, dispatcher
-from AyraRobot.modules.disable import DisableAbleCommandHandler
+from AaruRobot import TIME_API_KEY, dispatcher
+from AaruRobot.modules.disable import DisableAbleCommandHandler
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, run_async
 
