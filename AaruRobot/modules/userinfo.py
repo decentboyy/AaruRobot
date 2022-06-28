@@ -24,15 +24,15 @@ from AyraRobot import (
     dispatcher,
     sw,
 )
-from AyraRobot.__main__ import STATS, TOKEN, USER_INFO
-import AyraRobot.modules.sql.userinfo_sql as sql
-from AyraRobot.modules.disable import DisableAbleCommandHandler
-from AyraRobot.modules.sql.global_bans_sql import is_user_gbanned
-from AyraRobot.modules.sql.afk_sql import is_afk, check_afk_status
-from AyraRobot.modules.sql.users_sql import get_user_num_chats
-from AyraRobot.modules.helper_funcs.chat_status import sudo_plus
-from AyraRobot.modules.helper_funcs.extraction import extract_user
-from AyraRobot import telethn as FallenTelethonClient, TIGERS, DRAGONS, DEMONS
+from AaruRobot.__main__ import STATS, TOKEN, USER_INFO
+import AarhRobot.modules.sql.userinfo_sql as sql
+from AaruRobot.modules.disable import DisableAbleCommandHandler
+from AaruRobot.modules.sql.global_bans_sql import is_user_gbanned
+from AaruRobot.modules.sql.afk_sql import is_afk, check_afk_status
+from AaruRobot.modules.sql.users_sql import get_user_num_chats
+from AaruRobot.modules.helper_funcs.chat_status import sudo_plus
+from AaruRobot.modules.helper_funcs.extraction import extract_user
+from AaruRobot import telethn as FallenTelethonClient, TIGERS, DRAGONS, DEMONS
 
 
 def no_by_per(totalhp, percentage):
