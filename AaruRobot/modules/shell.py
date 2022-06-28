@@ -1,7 +1,7 @@
 import subprocess
 
-from AyraRobot import LOGGER, dispatcher
-from AyraRobot.modules.helper_funcs.chat_status import dev_plus
+from AaruRobot import LOGGER, dispatcher
+from AaruRobot.modules.helper_funcs.chat_status import dev_plus
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, CommandHandler
 from telegram.ext.dispatcher import run_async
