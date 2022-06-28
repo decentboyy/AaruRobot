@@ -1,6 +1,6 @@
 import io
-from AyraRobot.events import register
-from AyraRobot import telethn as tbot
+from AaruRobot.events import register
+from AaruRobot import telethn as tbot
 from telethon import types
 from telethon import events
 from telethon.tl import functions
