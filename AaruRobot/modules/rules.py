@@ -1,9 +1,9 @@
 from typing import Optional
 
-import AyraRobot.modules.sql.rules_sql as sql
-from AyraRobot import dispatcher
-from AyraRobot.modules.helper_funcs.chat_status import user_admin, connection_status
-from AyraRobot.modules.helper_funcs.string_handling import markdown_parser
+import AaruRobot.modules.sql.rules_sql as sql
+from AaruRobot import dispatcher
+from AaruRobot.modules.helper_funcs.chat_status import user_admin, connection_status
+from AaruRobot.modules.helper_funcs.string_handling import markdown_parser
 from telegram import (
     InlineKeyboardButton,
     InlineKeyboardMarkup,
