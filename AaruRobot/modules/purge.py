@@ -1,8 +1,8 @@
 import time
 from telethon import events
 
-from AyraRobot import telethn
-from AyraRobot.modules.helper_funcs.telethn.chatstatus import (
+from AaruRobot import telethn
+from AaruRobot.modules.helper_funcs.telethn.chatstatus import (
     can_delete_messages,
     user_is_admin,
 )
