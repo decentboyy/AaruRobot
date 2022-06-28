@@ -1,6 +1,6 @@
 from pyrogram import filters
 
-from AyraRobot import pbot
+from AaruRobot import pbot
 
 
 @pbot.on_message(filters.command("write"))
