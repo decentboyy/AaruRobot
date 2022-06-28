@@ -4,14 +4,14 @@ import nekos
 import requests
 from PIL import Image
 from telegram import ParseMode
-from AyraRobot import dispatcher, updater
-import AyraRobot.modules.sql.nsfw_sql as sql
-from AyraRobot.modules.log_channel import gloggable
+from AaruRobot import dispatcher, updater
+import AaruRobot.modules.sql.nsfw_sql as sql
+from AaruRobot.modules.log_channel import gloggable
 from telegram import Message, Chat, Update, Bot, MessageEntity
 from telegram.error import BadRequest, RetryAfter, Unauthorized
 from telegram.ext import CommandHandler, run_async, CallbackContext
-from AyraRobot.modules.helper_funcs.filters import CustomFilters
-from AyraRobot.modules.helper_funcs.chat_status import user_admin
+from AaruRobot.modules.helper_funcs.filters import CustomFilters
+from AaruRobot.modules.helper_funcs.chat_status import user_admin
 from telegram.utils.helpers import mention_html, mention_markdown, escape_markdown
 
 @run_async
