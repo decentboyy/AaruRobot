@@ -9,20 +9,20 @@ from datetime import datetime
 import random
 from PIL import Image
 from io import BytesIO
-from AyraRobot import telethn as bot
-from AyraRobot import telethn as tgbot
-from AyraRobot.events import register
-from AyraRobot import dispatcher
+from AaruRobot import telethn as bot
+from AaruRobot import telethn as tgbot
+from AaruRobot.events import register
+from AaruRobot import dispatcher
 
 
 edit_time = 5
-""" =======================AYRA ROBOT====================== """
+""" =======================AARU ROBOT====================== """
 file1 = "https://telegra.ph/file/9a85d0a873e2dd80d278d.jpg"
 file2 = "https://telegra.ph/file/9e7815284031452afa9e5.jpg"
 file3 = "https://telegra.ph/file/dcc5e003287f69acea368.jpg"
 file4 = "https://telegra.ph/file/ed1ce7fee94f46b0f671e.jpg"
 file5 = "https://telegra.ph/file/701028ce085ecfa961a36.jpg"
-""" =======================AYRA ROBOT====================== """
+""" =======================AARU ROBOT====================== """
 
 
 @register(pattern="/myinfo")
