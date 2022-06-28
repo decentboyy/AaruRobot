@@ -4,9 +4,9 @@ import textwrap
 
 import os
 
-from AyraRobot.events import register
+from AaruRobot.events import register
 
-from AyraRobot import (
+from AaruRobot import (
 
     LOGGER,
 
@@ -16,10 +16,10 @@ from AyraRobot import (
 
 
 
-from AyraRobot import telethn as bot
+from AaruRobot import telethn as bot
 
 
-Credit = "AnonymousBoy1025" 
+Credit = "BANNA-XD143" 
 
 
 @register(pattern="^/mmf ?(.*)")
@@ -48,7 +48,7 @@ async def handler(event):
 
     msg = await event.reply("```Memifying this image! ✊🏻 ```")
 
-    if "AnonymousBoy1025" in Credit:
+    if "BANNA-XD143" in Credit:
        pass
 
     else: 
@@ -86,7 +86,7 @@ async def drawText(image_path, text):
 
     else:
 
-        fnt = "./FallenRobot/resources/default.ttf"
+        fnt = "./AaruRobot/resources/default.ttf"
 
     m_font = ImageFont.truetype(fnt, int((70 / 640) * i_width))
 
