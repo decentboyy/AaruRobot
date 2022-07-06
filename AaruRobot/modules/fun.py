@@ -2,11 +2,11 @@ import html
 import random
 import time
 
-import AyraRobot.modules.fun_strings as fun_strings
-from AyraRobot import dispatcher
-from AyraRobot.modules.disable import DisableAbleCommandHandler
-from AyraRobot.modules.helper_funcs.chat_status import is_user_admin
-from AyraRobot.modules.helper_funcs.extraction import extract_user
+import AaruRobot.modules.fun_strings as fun_strings
+from AaruRobot import dispatcher
+from AaruRobot.modules.disable import DisableAbleCommandHandler
+from AaruRobot.modules.helper_funcs.chat_status import is_user_admin
+from AaruRobot.modules.helper_funcs.extraction import extract_user
 from telegram import ChatPermissions, ParseMode, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, run_async
@@ -102,8 +102,8 @@ def slap(update: Update, context: CallbackContext):
     hit = random.choice(fun_strings.HIT)
     throw = random.choice(fun_strings.THROW)
 
-    if update.effective_user.id == 1096215023:
-        temp = "@NeoTheKitty scratches {user2}"
+    if update.effective_user.id == 5191956205:
+        temp = "@BANNA_XD scratches {user2}"
 
     reply = temp.format(user1=user1, user2=user2, item=item, hits=hit, throws=throw)
 
