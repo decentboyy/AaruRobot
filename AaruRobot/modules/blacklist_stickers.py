@@ -1,17 +1,17 @@
 import html
 from typing import Optional
 
-import AyraRobot.modules.sql.blsticker_sql as sql
-from AyraRobot import LOGGER, dispatcher
-from AyraRobot.modules.connection import connected
-from AyraRobot.modules.disable import DisableAbleCommandHandler
-from AyraRobot.modules.helper_funcs.alternate import send_message
-from AyraRobot.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from AyraRobot.modules.helper_funcs.misc import split_message
-from AyraRobot.modules.helper_funcs.string_handling import extract_time
+import AaruRobot.modules.sql.blsticker_sql as sql
+from AaryRobot import LOGGER, dispatcher
+from AaruRobot.modules.connection import connected
+from AaruRobot.modules.disable import DisableAbleCommandHandler
+from AaruRobot.modules.helper_funcs.alternate import send_message
+from AaruRobot.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from AaruRobot.modules.helper_funcs.misc import split_message
+from AaruRobot.modules.helper_funcs.string_handling import extract_time
 
-from AyraRobot.modules.log_channel import loggable
-from AyraRobot.modules.warns import warn
+from AaruRobot.modules.log_channel import loggable
+from AaruRobot.modules.warns import warn
 from telegram import Chat, Message, ParseMode, Update, User, ChatPermissions
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, Filters, MessageHandler
