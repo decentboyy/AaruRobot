@@ -1,12 +1,12 @@
 import random, html
 
-from AyraRobot import dispatcher
-from AyraRobot.modules.disable import (
+from AaruRobot import dispatcher
+from AaruRobot.modules.disable import (
     DisableAbleCommandHandler,
     DisableAbleMessageHandler,
 )
-from AyraRobot.modules.sql import afk_sql as sql
-from AyraRobot.modules.users import get_user_id
+from AaruRobot.modules.sql import afk_sql as sql
+from AaruRobot.modules.users import get_user_id
 from telegram import MessageEntity, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, Filters, MessageHandler, run_async
