@@ -5,7 +5,7 @@ from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, Filters, run_async
 from telegram.utils.helpers import mention_html
 
-from AyraRobot import (
+from AaruRobot import (
     DEV_USERS,
     LOGGER,
     OWNER_ID,
@@ -15,8 +15,8 @@ from AyraRobot import (
     WOLVES,
     dispatcher,
 )
-from AyraRobot.modules.disable import DisableAbleCommandHandler
-from AyraRobot.modules.helper_funcs.chat_status import (
+from AaruRobot.modules.disable import DisableAbleCommandHandler
+from AaruRobot.modules.helper_funcs.chat_status import (
     bot_admin,
     can_restrict,
     connection_status,
@@ -27,9 +27,9 @@ from AyraRobot.modules.helper_funcs.chat_status import (
     user_can_ban,
     can_delete,
 )
-from AyraRobot.modules.helper_funcs.extraction import extract_user_and_text
-from AyraRobot.modules.helper_funcs.string_handling import extract_time
-from AyraRobot.modules.log_channel import gloggable, loggable
+from AaruRobot.modules.helper_funcs.extraction import extract_user_and_text
+from AaruRobot.modules.helper_funcs.string_handling import extract_time
+from AaryRobot.modules.log_channel import gloggable, loggable
 
 
 @run_async
