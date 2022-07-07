@@ -15,25 +15,25 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import mention_html, escape_markdown
 
-from AyraRobot import dispatcher, LOGGER, DRAGONS
-from AyraRobot.modules.disable import DisableAbleCommandHandler
-from AyraRobot.modules.helper_funcs.handlers import MessageHandlerChecker
-from AyraRobot.modules.helper_funcs.chat_status import user_admin
-from AyraRobot.modules.helper_funcs.extraction import extract_text
-from AyraRobot.modules.helper_funcs.filters import CustomFilters
-from AyraRobot.modules.helper_funcs.misc import build_keyboard_parser
-from AyraRobot.modules.helper_funcs.msg_types import get_filter_type
-from AyraRobot.modules.helper_funcs.string_handling import (
+from AaruRobot import dispatcher, LOGGER, DRAGONS
+from AaruRobot.modules.disable import DisableAbleCommandHandler
+from AaruRobot.modules.helper_funcs.handlers import MessageHandlerChecker
+from AaruRobot.modules.helper_funcs.chat_status import user_admin
+from AaruRobot.modules.helper_funcs.extraction import extract_text
+from AaruRobot.modules.helper_funcs.filters import CustomFilters
+from AaruRobot.modules.helper_funcs.misc import build_keyboard_parser
+from AaruRobot.modules.helper_funcs.msg_types import get_filter_type
+from AaruRobot.modules.helper_funcs.string_handling import (
     split_quotes,
     button_markdown_parser,
     escape_invalid_curly_brackets,
     markdown_to_html,
 )
-from AyraRobot.modules.sql import cust_filters_sql as sql
+from AaruRobot.modules.sql import cust_filters_sql as sql
 
-from AyraRobot.modules.connection import connected
+from AaruRobot.modules.connection import connected
 
-from AyraRobot.modules.helper_funcs.alternate import send_message, typing_action
+from AaruRobot.modules.helper_funcs.alternate import send_message, typing_action
 
 HANDLER_GROUP = 10
 
