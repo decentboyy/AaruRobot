@@ -1,7 +1,7 @@
 import threading
 from typing import Union
 
-from AyraRobot.modules.sql import BASE, SESSION
+from AaruRobot.modules.sql import BASE, SESSION
 from sqlalchemy import Boolean, Column, BigInteger, String
 
 
