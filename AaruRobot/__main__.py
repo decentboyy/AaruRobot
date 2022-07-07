@@ -91,7 +91,7 @@ buttons = [
         InlineKeyboardButton(
             text="💞 𝐀𝐁𝐎𝐔𝐓 𝐌𝐄​​ 💞", callback_data="fallen_"),
         InlineKeyboardButton(
-            text="🙄 𝐒𝐎𝐔𝐑𝐂𝐄 𝐂𝐎𝐃𝐄 🙄", callback_data="https://telegra.ph/file/9b0455dae14d5639f936d.mp4"),
+            text="🙄 𝐒𝐎𝐔𝐑𝐂𝐄 𝐂𝐎𝐃𝐄 🙄", callback_data="https://github.com/BANNA-XD143/AaruRobot"),
     ],
     [
         InlineKeyboardButton(
