@@ -1,8 +1,8 @@
 from pyrogram.types import Message
 from pyrogram import filters
-from AyraRobot import pbot
-from AyraRobot.utils.errors import capture_err
-from AyraRobot.utils.functions import make_carbon
+from AaruRobot import pbot
+from AaruRobot.utils.errors import capture_err
+from AaruRobot.utils.functions import make_carbon
 
 
 @pbot.on_message(filters.command("carbon"))
