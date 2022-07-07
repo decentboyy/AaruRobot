@@ -3,7 +3,7 @@ import re
 import os
 import html
 import requests
-import AyraRobot.modules.sql.chatbot_sql as sql
+import AaruRobot.modules.sql.chatbot_sql as sql
 
 from time import sleep
 from telegram import ParseMode
@@ -15,10 +15,10 @@ from telegram.ext import (CallbackContext, CallbackQueryHandler, CommandHandler,
 from telegram.error import BadRequest, RetryAfter, Unauthorized
 from telegram.utils.helpers import mention_html, mention_markdown, escape_markdown
 
-from AyraRobot.modules.helper_funcs.filters import CustomFilters
-from AyraRobot.modules.helper_funcs.chat_status import user_admin, user_admin_no_reply
-from AyraRobot import dispatcher, updater, SUPPORT_CHAT
-from AyraRobot.modules.log_channel import gloggable
+from AaruRobot.modules.helper_funcs.filters import CustomFilters
+from AaruRobot.modules.helper_funcs.chat_status import user_admin, user_admin_no_reply
+from AaruRobot import dispatcher, updater, SUPPORT_CHAT
+from AaruRobot.modules.log_channel import gloggable
 
 @run_async
 @user_admin_no_reply
@@ -40,7 +40,7 @@ def kukirm(update: Update, context: CallbackContext) -> str:
             )
         else:
             update.effective_message.edit_text(
-                "ꜰᴀʟʟᴇɴ ✘ ʀᴏʙᴏᴛ ᴄʜᴀᴛʙᴏᴛ ᴅɪsᴀʙʟᴇᴅ ʙʏ {}.".format(mention_html(user.id, user.first_name)),
+                "ᴀᴀʀᴜ ✘ ʀᴏʙᴏᴛ ᴄʜᴀᴛʙᴏᴛ ᴅɪsᴀʙʟᴇᴅ ʙʏ {}.".format(mention_html(user.id, user.first_name)),
                 parse_mode=ParseMode.HTML,
             )
 
@@ -66,7 +66,7 @@ def kukiadd(update: Update, context: CallbackContext) -> str:
             )
         else:
             update.effective_message.edit_text(
-                "ꜰᴀʟʟᴇɴ ✘ ʀᴏʙᴏᴛ ᴄʜᴀᴛʙᴏᴛ ᴇɴᴀʙʟᴇᴅ ʙʏ {}.".format(mention_html(user.id, user.first_name)),
+                "ᴀᴀʀᴜ ✘ ʀᴏʙᴏᴛ ᴄʜᴀᴛʙᴏᴛ ᴇɴᴀʙʟᴇᴅ ʙʏ {}.".format(mention_html(user.id, user.first_name)),
                 parse_mode=ParseMode.HTML,
             )
 
@@ -126,7 +126,7 @@ def chatbot(update: Update, context: CallbackContext):
 
 def list_all_chats(update: Update, context: CallbackContext):
     chats = sql.get_all_kuki_chats()
-    text = "<b>Fallen Enabled Chats</b>\n"
+    text = "<b>Aaru Enabled Chats</b>\n"
     for chat in chats:
         try:
             x = context.bot.get_chat(int(*chat))
