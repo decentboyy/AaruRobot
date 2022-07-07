@@ -6,18 +6,18 @@ from telegram.error import BadRequest
 from telegram.ext import CommandHandler, MessageHandler, Filters, run_async
 from telegram.utils.helpers import mention_html
 
-import AyraRobot.modules.sql.blacklist_sql as sql
-from AyraRobot import dispatcher, LOGGER
-from AyraRobot.modules.disable import DisableAbleCommandHandler
-from AyraRobot.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from AyraRobot.modules.helper_funcs.extraction import extract_text
-from AyraRobot.modules.helper_funcs.misc import split_message
-from AyraRobot.modules.log_channel import loggable
-from AyraRobot.modules.warns import warn
-from AyraRobot.modules.helper_funcs.string_handling import extract_time
-from AyraRobot.modules.connection import connected
-from AyraRobot.modules.sql.approve_sql import is_approved
-from AyraRobot.modules.helper_funcs.alternate import send_message, typing_action
+import AaruRobot.modules.sql.blacklist_sql as sql
+from AaruRobot import dispatcher, LOGGER
+from AaruRobot.modules.disable import DisableAbleCommandHandler
+from AaruRobot.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from AaruRobot.modules.helper_funcs.extraction import extract_text
+from AaruRobot.modules.helper_funcs.misc import split_message
+from AaruRobot.modules.log_channel import loggable
+from AaruRobot.modules.warns import warn
+from AaruRobot.modules.helper_funcs.string_handling import extract_time
+from AaruRobot.modules.connection import connected
+from AaruRobot.modules.sql.approve_sql import is_approved
+from AaruRobot.modules.helper_funcs.alternate import send_message, typing_action
 
 BLACKLIST_GROUP = 11
 
