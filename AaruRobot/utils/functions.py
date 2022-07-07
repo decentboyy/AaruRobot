@@ -1,6 +1,6 @@
 from asyncio import gather
 from io import BytesIO
-from AyraRobot import aiohttpsession as aiosession
+from AaruRobot import aiohttpsession as aiosession
 
 
 async def make_carbon(code):
