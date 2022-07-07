@@ -7,8 +7,8 @@ from time import sleep
 
 import AyraRobot
 
-from AyraRobot import dispatcher
-from AyraRobot.modules.helper_funcs.chat_status import dev_plus
+from AaruRobot import dispatcher
+from AaruRobot.modules.helper_funcs.chat_status import dev_plus
 from telegram import TelegramError, Update
 from telegram.error import Unauthorized
 from telegram.ext import CallbackContext, CommandHandler, run_async
@@ -18,12 +18,12 @@ from telegram.ext import CallbackContext, CommandHandler, run_async
 def allow_groups(update: Update, context: CallbackContext):
     args = context.args
     if not args:
-        update.effective_message.reply_text(f"Current state: {AyraRobot.ALLOW_CHATS}")
+        update.effective_message.reply_text(f"Current state: {AaruRobot.ALLOW_CHATS}")
         return
     if args[0].lower() in ["off", "no"]:
-        AyraRobot.ALLOW_CHATS = True
+        AaruRobot.ALLOW_CHATS = True
     elif args[0].lower() in ["yes", "on"]:
-        AyraRobot.ALLOW_CHATS = False
+        AaruRobot.ALLOW_CHATS = False
     else:
         update.effective_message.reply_text("Format: /lockdown Yes/No or Off/On")
         return
