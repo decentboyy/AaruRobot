@@ -1,9 +1,9 @@
 from time import sleep
 
-import AyraRobot.modules.sql.global_bans_sql as gban_sql
-import AyraRobot.modules.sql.users_sql as user_sql
-from AyraRobot import DEV_USERS, OWNER_ID, dispatcher
-from AyraRobot.modules.helper_funcs.chat_status import dev_plus
+import AaruRobot.modules.sql.global_bans_sql as gban_sql
+import AaruRobot.modules.sql.users_sql as user_sql
+from AaruRobot import DEV_USERS, OWNER_ID, dispatcher
+from AaruRobot.modules.helper_funcs.chat_status import dev_plus
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
 from telegram.error import BadRequest, Unauthorized
 from telegram.ext import (
