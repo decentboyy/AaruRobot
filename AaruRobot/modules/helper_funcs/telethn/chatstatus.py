@@ -1,5 +1,5 @@
-from AyraRobot.modules.helper_funcs.telethn import IMMUNE_USERS, telethn
-from AyraRobot import DRAGONS
+from AaruRobot.modules.helper_funcs.telethn import IMMUNE_USERS, telethn
+from AaruRobot import DRAGONS
 from telethon.tl.types import ChannelParticipantsAdmins
 
 
