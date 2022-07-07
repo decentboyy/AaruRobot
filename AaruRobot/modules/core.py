@@ -1,15 +1,15 @@
-from AyraRobot import telethn as tbot
-from AyraRobot.events import register
+from AaruRobot import telethn as tbot
+from AaruRobot.events import register
 import os
 import asyncio
 import os
 import time
 from datetime import datetime
-from AyraRobot import OWNER_ID
-from AyraRobot import TEMP_DOWNLOAD_DIRECTORY as path
-from AyraRobot import TEMP_DOWNLOAD_DIRECTORY
+from AaruRobot import OWNER_ID
+from AaruRobot import TEMP_DOWNLOAD_DIRECTORY as path
+from AaruRobot import TEMP_DOWNLOAD_DIRECTORY
 from datetime import datetime
-water = './AyraRobot/resources/fallen.jpg'
+water = './AaruRobot/resources/fallen.jpg'
 client = tbot
 
 @register(pattern=r"^/send ?(.*)")
@@ -21,7 +21,7 @@ async def Prof(event):
     thumb = water
     message_id = event.message.id
     input_str = event.pattern_match.group(1)
-    the_plugin_file = "./AyraRobot/modules/{}.py".format(input_str)
+    the_plugin_file = "./AaruRobot/modules/{}.py".format(input_str)
     if os.path.exists(the_plugin_file):
      message_id = event.message.id
      await event.client.send_file(
@@ -36,7 +36,7 @@ async def Prof(event):
         await event.reply("No File Found!")
 
 
-from AyraRobot.events import load_module
+from AaruRobot.events import load_module
 import asyncio
 import os
 from datetime import datetime
@@ -55,7 +55,7 @@ async def install(event):
             downloaded_file_name = (
                 await event.client.download_media(  # pylint:disable=E0602
                     await event.get_reply_message(),
-                    "AyraRobot/modules/",  # pylint:disable=E0602
+                    "AaruRobot/modules/",  # pylint:disable=E0602
                 )
             )
             if "(" not in downloaded_file_name:
@@ -80,15 +80,15 @@ async def install(event):
     await asyncio.sleep(3)
     await event.delete()
 
-from AyraRobot import telethn as tbot, OWNER_ID, DEV_USERS
-from AyraRobot.events import register
+from AaruRobot import telethn as tbot, OWNER_ID, DEV_USERS
+from AaruRobot.events import register
 import os
 import asyncio
 import os
 import time
 from datetime import datetime
-from AyraRobot import TEMP_DOWNLOAD_DIRECTORY as path
-from AyraRobot import TEMP_DOWNLOAD_DIRECTORY
+from AaruRobot import TEMP_DOWNLOAD_DIRECTORY as path
+from AaruRobot import TEMP_DOWNLOAD_DIRECTORY
 from datetime import datetime
 import asyncio
 import os
@@ -128,7 +128,7 @@ client = tbot
 import time
 from io import BytesIO
 from pathlib import Path
-from AyraRobot import telethn as borg
+from AaruRobot import telethn as borg
 from telethon import functions, types
 from telethon.errors import PhotoInvalidDimensionsError
 from telethon.errors.rpcerrorlist import YouBlockedUserError
