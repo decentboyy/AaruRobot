@@ -1,6 +1,6 @@
-import AyraRobot.modules.sql.blacklistusers_sql as sql
-from AyraRobot import ALLOW_EXCL
-from AyraRobot import DEV_USERS, DRAGONS, DEMONS, TIGERS, WOLVES
+import AaruRobot.modules.sql.blacklistusers_sql as sql
+from AaruRobot import ALLOW_EXCL
+from AaruRobot import DEV_USERS, DRAGONS, DEMONS, TIGERS, WOLVES
 
 from telegram import Update
 from telegram.ext import CommandHandler, MessageHandler, RegexHandler, Filters
