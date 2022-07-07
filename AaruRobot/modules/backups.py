@@ -5,23 +5,23 @@ from telegram import ParseMode, Message
 from telegram.error import BadRequest
 from telegram.ext import CommandHandler, run_async
 
-import AyraRobot.modules.sql.notes_sql as sql
-from AyraRobot import dispatcher, LOGGER, OWNER_ID, JOIN_LOGGER, SUPPORT_CHAT
-from AyraRobot.__main__ import DATA_IMPORT
-from AyraRobot.modules.helper_funcs.chat_status import user_admin
-from AyraRobot.modules.helper_funcs.alternate import typing_action
+import AaruRobot.modules.sql.notes_sql as sql
+from AaruRobot import dispatcher, LOGGER, OWNER_ID, JOIN_LOGGER, SUPPORT_CHAT
+from AaruRobot.__main__ import DATA_IMPORT
+from AaruRobot.modules.helper_funcs.chat_status import user_admin
+from AaruRobot.modules.helper_funcs.alternate import typing_action
 
-# from AyraRobot.modules.rules import get_rules
-import AyraRobot.modules.sql.rules_sql as rulessql
+# from AaruRobot.modules.rules import get_rules
+import AaruRobot.modules.sql.rules_sql as rulessql
 
-# from AyraRobot.modules.sql import warns_sql as warnssql
-import AyraRobot.modules.sql.blacklist_sql as blacklistsql
-from AyraRobot.modules.sql import disable_sql as disabledsql
+# from AaruRobot.modules.sql import warns_sql as warnssql
+import AaruRobot.modules.sql.blacklist_sql as blacklistsql
+from AaruRobot.modules.sql import disable_sql as disabledsql
 
-# from AyraRobot.modules.sql import cust_filters_sql as filtersql
-# import AyraRobot.modules.sql.welcome_sql as welcsql
-import AyraRobot.modules.sql.locks_sql as locksql
-from AyraRobot.modules.connection import connected
+# from AaruRobot.modules.sql import cust_filters_sql as filtersql
+# import AaruRobot.modules.sql.welcome_sql as welcsql
+import AaruRobot.modules.sql.locks_sql as locksql
+from AaruRobot.modules.connection import connected
 
 
 @run_async
