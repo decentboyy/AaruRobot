@@ -1,7 +1,7 @@
 from typing import List, Optional
 
-from AyraRobot import LOGGER
-from AyraRobot.modules.users import get_user_id
+from AaruRobot import LOGGER
+from AaruRobot.modules.users import get_user_id
 from telegram import Message, MessageEntity
 from telegram.error import BadRequest
 
