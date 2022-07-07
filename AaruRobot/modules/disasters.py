@@ -3,7 +3,7 @@ import json
 import os
 from typing import Optional
 
-from AyraRobot import (
+from AaruRobot import (
     DEV_USERS,
     OWNER_ID,
     DRAGONS,
@@ -13,18 +13,18 @@ from AyraRobot import (
     WOLVES,
     dispatcher,
 )
-from AyraRobot.modules.helper_funcs.chat_status import (
+from AaruRobot.modules.helper_funcs.chat_status import (
     dev_plus,
     sudo_plus,
     whitelist_plus,
 )
-from AyraRobot.modules.helper_funcs.extraction import extract_user
-from AyraRobot.modules.log_channel import gloggable
+from AaruRobot.modules.helper_funcs.extraction import extract_user
+from AaruRobot.modules.log_channel import gloggable
 from telegram import ParseMode, TelegramError, Update
 from telegram.ext import CallbackContext, CommandHandler, run_async
 from telegram.utils.helpers import mention_html
 
-ELEVATED_USERS_FILE = os.path.join(os.getcwd(), "FallenRobot/elevated_users.json")
+ELEVATED_USERS_FILE = os.path.join(os.getcwd(), "AaruRobot/elevated_users.json")
 
 
 def check_user_id(user_id: int, context: CallbackContext) -> Optional[str]:
