@@ -8,13 +8,13 @@ from pyrogram.types import (
     Message,
 )
 
-from AyraRobot import pbot as Client
-from AyraRobot import (
+from AaruRobot import pbot as Client
+from AaruRobot import (
     OWNER_ID as owner_id,
     OWNER_USERNAME as owner_usn,
     SUPPORT_CHAT as log,
 )
-from AyraRobot.utils.errors import capture_err
+from AaruRobot.utils.errors import capture_err
 
 
 def content(msg: Message) -> [None, str]:
