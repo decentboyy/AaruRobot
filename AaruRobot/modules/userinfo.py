@@ -13,7 +13,7 @@ from telegram.ext.dispatcher import run_async
 from telegram.error import BadRequest
 from telegram.utils.helpers import escape_markdown, mention_html
 
-from AyraRobot import (
+from AaruRobot import (
     DEV_USERS,
     OWNER_ID,
     DRAGONS,
@@ -25,7 +25,7 @@ from AyraRobot import (
     sw,
 )
 from AaruRobot.__main__ import STATS, TOKEN, USER_INFO
-import AarhRobot.modules.sql.userinfo_sql as sql
+import AaruRobot.modules.sql.userinfo_sql as sql
 from AaruRobot.modules.disable import DisableAbleCommandHandler
 from AaruRobot.modules.sql.global_bans_sql import is_user_gbanned
 from AaruRobot.modules.sql.afk_sql import is_afk, check_afk_status
