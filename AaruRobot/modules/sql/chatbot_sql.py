@@ -1,7 +1,7 @@
 import threading
 
 from sqlalchemy import Column, String
-from AyraRobot.modules.sql import BASE, SESSION
+from AaruRobot.modules.sql import BASE, SESSION
 
 class KukiChats(BASE):
     __tablename__ = "kuki_chats"
