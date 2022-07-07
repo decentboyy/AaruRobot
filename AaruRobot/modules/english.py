@@ -1,7 +1,7 @@
-from AyraRobot import telethn as tbot
+from AaruRobot import telethn as tbot
 import json
 import requests
-from AyraRobot.events import register
+from AaruRobot.events import register
 from telethon import *
 from telethon.tl import functions
 import os
