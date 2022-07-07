@@ -4,7 +4,7 @@ import re
 from sys import argv
 from typing import Optional
 
-from AaruRobot import (
+from FallenRobot import (
     ALLOW_EXCL,
     OWNER_USERNAME,
     CERT_PATH,
@@ -19,6 +19,7 @@ from AaruRobot import (
     SUPPORT_CHAT,
     dispatcher,
     StartTime,
+    START_IMG,
     telethn,
     pbot,
     updater,
@@ -26,9 +27,9 @@ from AaruRobot import (
 
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
-from AaruRobot.modules import ALL_MODULES
-from AaruRobot.modules.helper_funcs.chat_status import is_user_admin
-from AaruRobot.modules.helper_funcs.misc import paginate_modules
+from FallenRobot.modules import ALL_MODULES
+from FallenRobot.modules.helper_funcs.chat_status import is_user_admin
+from FallenRobot.modules.helper_funcs.misc import paginate_modules
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.error import (
     BadRequest,
@@ -75,42 +76,37 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-*ʜᴇʏ,\n ᴛʜɪs ɪs 𝐀𝐀𝐑𝐔🌹𝐑𝐎𝐁𝐎𝐓 * [!](https://telegra.ph/file/32a233d95575667dba3ca.jpg)\n\n *ɪ ᴀᴍ ᴛʜᴇ ᴍᴏsᴛ ᴘᴏᴡᴇʀꜰᴜʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴏꜰ ᴛᴇʟᴇɢʀᴀᴍ.\n  ɪ ʜᴀᴠᴇ ᴀᴡᴇsᴏᴍᴇ ꜰᴇᴀᴛᴜʀᴇs ᴀɴᴅ ɴᴏ ᴏɴᴇ ᴄᴀɴ ʙᴇᴀᴛ ᴍᴇ\nꜰᴏʀ ɢᴇᴛᴛɪɴɢ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs ᴄʟɪᴄᴋ ᴏɴ ᴄᴏᴍᴍᴀɴᴅs ʙᴜᴛᴛᴏɴ ᴏʀ ʜɪᴛ*​ /help
+*ʜᴇʏ,\n ᴛʜɪs ɪs {}* [!](https://telegra.ph/file/35b87c2ed7f682d1539be.jpg)\n\n *ɪ ᴀᴍ ᴛʜᴇ ᴍᴏsᴛ ᴘᴏᴡᴇʀꜰᴜʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴏꜰ ᴛᴇʟᴇɢʀᴀᴍ.\n  ɪ ʜᴀᴠᴇ ᴀᴡᴇsᴏᴍᴇ ꜰᴇᴀᴛᴜʀᴇs ᴀɴᴅ ɴᴏ ᴏɴᴇ ᴄᴀɴ ʙᴇᴀᴛ ᴍᴇ\nꜰᴏʀ ɢᴇᴛᴛɪɴɢ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs ᴄʟɪᴄᴋ ᴏɴ ᴄᴏᴍᴍᴀɴᴅs ʙᴜᴛᴛᴏɴ ᴏʀ ʜɪᴛ*​ /help
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="✗ 𝐀𝐃𝐃 𝐌𝐄 𝐌𝐄𝐑𝐈 𝐉𝐀𝐀𝐍​ ✗", url="https://t.me/MISS_AARU_X_ROBOT?startgroup=true"),
-    ],
-    [
-        InlineKeyboardButton(
-            text="🧐 𝐇𝐄𝐋𝐏 & 𝐂𝐌𝐃𝐒​​​ 🧐", callback_data="help_back"),
-
-    ],
-    [
-        InlineKeyboardButton(
-            text="💞 𝐀𝐁𝐎𝐔𝐓 𝐌𝐄​​ 💞", callback_data="Aaru_"),
-        InlineKeyboardButton(
-            text="🙄 𝐒𝐎𝐔𝐑𝐂𝐄 𝐂𝐎𝐃𝐄 🙄", callback_data="https://telegra.ph/file/9b0455dae14d5639f936d.mp4"),
-            
-    ],
-    [
-        InlineKeyboardButton(
-            text="💔 𝐒𝐔𝐏𝐏𝐎𝐑𝐓 💔", url=f"https://t.me/love_birds_group"
+            text="✗ ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ​ ✗",
+            url=f"https://t.me/{dispatcher.bot.username}?startgroup=true",
         ),
+    ],
+    [
+        InlineKeyboardButton(text="🧐 ʜᴇʟᴘ & ᴄᴍᴅs​​​ 🧐", callback_data="help_back"),
+    ],
+    [
+        InlineKeyboardButton(text="💞 ᴀʙᴏᴜᴛ ᴍᴇ​​ 💞", callback_data="fallen_"),
+        InlineKeyboardButton(text="🙄 sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ 🙄", callback_data="source_"),
+    ],
+    [
+        InlineKeyboardButton(text="💔 sᴜᴘᴘᴏʀᴛ 💔", url=f"https://t.me/{SUPPORT_CHAT}"),
         InlineKeyboardButton(
-            text="🍑 𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐑 🍑", url=f"https://t.me/BANNA_XD"
+            text="🍑 ᴅᴇᴠᴇʟᴏᴘᴇʀ 🍑", url=f"https://t.me/{OWNER_USERNAME}"
         ),
     ],
 ]
 
-AaruRobot_IMG = "https://telegra.ph/file/32a233d95575667dba3ca.jpg"
+FallenRobot_IMG = "https://telegra.ph/file/35b87c2ed7f682d1539be.jpg"
 
 HELP_STRINGS = f"""
-𝑨𝑨𝑹𝑼 𝑹𝑶𝑩𝑶𝑻 *ᴇxᴄʟᴜsɪᴠᴇ ꜰᴇᴀᴛᴜʀᴇs*\n*» ᴄʜᴇᴄᴋᴏᴜᴛ ᴀʟʟ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅs*\n*» ᴀʟʟ ᴏꜰ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs ᴄᴀɴ ʙᴇ ᴜsᴇᴅ ᴡɪᴛʜ / ᴏʀ !*\n*» ɪꜰ ʏᴏᴜ ɢᴏᴛ ᴀɴʏ ɪssᴜᴇ ᴏʀ ʙᴜɢ ɪɴ ᴀɴʏ ᴄᴏᴍᴍᴀɴᴅ ᴘʟᴇᴀsᴇ ʀᴇᴘᴏʀᴛ ɪᴛ ᴛᴏ @{SUPPORT_CHAT}*\n\n*ㅤㅤㅤㅤㅤㅤ» ᴍᴀɪɴ ᴄᴏᴍᴍᴀɴᴅꜱ «*\n\n➲ /start : *ꜱᴛᴀʀᴛꜱ ᴍᴇ | ᴀᴄᴄᴏʀᴅɪɴɢ ᴛᴏ ᴍᴇ ʏᴏᴜ'ᴠᴇ ᴀʟʀᴇᴀᴅʏ ᴅᴏɴᴇ ɪᴛ​.*\n➲ /donate : *sᴜᴘᴘᴏʀᴛ ᴍᴇ ʙʏ ᴅᴏɴᴀᴛɪɴɢ ꜰᴏʀ ᴍʏ ʜᴀʀᴅᴡᴏʀᴋ​.*\n➲ /help  : *ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅꜱ ꜱᴇᴄᴛɪᴏɴ.*\n*  ‣ ɪɴ ᴘᴍ : ᴡɪʟʟ ꜱᴇɴᴅ ʏᴏᴜ ʜᴇʟᴘ​ ꜰᴏʀ ᴀʟʟ ꜱᴜᴘᴘᴏʀᴛᴇᴅ ᴍᴏᴅᴜʟᴇꜱ.*\n*  ‣ ɪɴ ɢʀᴏᴜᴘ : ᴡɪʟʟ ʀᴇᴅɪʀᴇᴄᴛ ʏᴏᴜ ᴛᴏ ᴘᴍ, ᴡɪᴛʜ ᴀʟʟ ᴛʜᴀᴛ ʜᴇʟᴘ​ ᴍᴏᴅᴜʟᴇꜱ.*"""
+ғᴀʟʟᴇɴ ✘ ʀᴏʙᴏᴛ *ᴇxᴄʟᴜsɪᴠᴇ ꜰᴇᴀᴛᴜʀᴇs*\n*» ᴄʜᴇᴄᴋᴏᴜᴛ ᴀʟʟ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅs*\n*» ᴀʟʟ ᴏꜰ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs ᴄᴀɴ ʙᴇ ᴜsᴇᴅ ᴡɪᴛʜ / ᴏʀ !*\n*» ɪꜰ ʏᴏᴜ ɢᴏᴛ ᴀɴʏ ɪssᴜᴇ ᴏʀ ʙᴜɢ ɪɴ ᴀɴʏ ᴄᴏᴍᴍᴀɴᴅ ᴘʟᴇᴀsᴇ ʀᴇᴘᴏʀᴛ ɪᴛ ᴛᴏ @{SUPPORT_CHAT}*\n\n*ㅤㅤㅤㅤㅤㅤ» ᴍᴀɪɴ ᴄᴏᴍᴍᴀɴᴅꜱ «*\n\n➲ /start : *ꜱᴛᴀʀᴛꜱ ᴍᴇ | ᴀᴄᴄᴏʀᴅɪɴɢ ᴛᴏ ᴍᴇ ʏᴏᴜ'ᴠᴇ ᴀʟʀᴇᴀᴅʏ ᴅᴏɴᴇ ɪᴛ​.*\n➲ /donate : *sᴜᴘᴘᴏʀᴛ ᴍᴇ ʙʏ ᴅᴏɴᴀᴛɪɴɢ ꜰᴏʀ ᴍʏ ʜᴀʀᴅᴡᴏʀᴋ​.*\n➲ /help  : *ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅꜱ ꜱᴇᴄᴛɪᴏɴ.*\n*  ‣ ɪɴ ᴘᴍ : ᴡɪʟʟ ꜱᴇɴᴅ ʏᴏᴜ ʜᴇʟᴘ​ ꜰᴏʀ ᴀʟʟ ꜱᴜᴘᴘᴏʀᴛᴇᴅ ᴍᴏᴅᴜʟᴇꜱ.*\n*  ‣ ɪɴ ɢʀᴏᴜᴘ : ᴡɪʟʟ ʀᴇᴅɪʀᴇᴄᴛ ʏᴏᴜ ᴛᴏ ᴘᴍ, ᴡɪᴛʜ ᴀʟʟ ᴛʜᴀᴛ ʜᴇʟᴘ​ ᴍᴏᴅᴜʟᴇꜱ.*"""
 
-DONATE_STRING = """❛[𝐌𝐑'𝐁𝐀𝐍𝐍𝐀 🚬 𝐊𝐈𝐍𝐆-𝐱𝐃 °](https://t.me/BANNA_XD)"""
+DONATE_STRING = """[𝝙𝗡𝗢𝗡𝗬𝗠𝗢𝗨𝗦](https://t.me/anonymous_was_bot)"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -123,7 +119,7 @@ CHAT_SETTINGS = {}
 USER_SETTINGS = {}
 
 for module_name in ALL_MODULES:
-    imported_module = importlib.import_module("AaruRobot.modules." + module_name)
+    imported_module = importlib.import_module("FallenRobot.modules." + module_name)
     if not hasattr(imported_module, "__mod_name__"):
         imported_module.__mod_name__ = imported_module.__name__
 
@@ -213,14 +209,15 @@ def start(update: Update, context: CallbackContext):
 
         else:
             update.effective_message.reply_text(
-                PM_START_TEXT,
+                PM_START_TEXT.format(dispatcher.bot.first_name),
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
             )
     else:
-        update.effective_message.reply_text(
-            "ɪ ᴀᴍ ᴀʟɪᴠᴇ ᴍᴇʀɪ ᴊᴀᴀɴ !\n<b>ɪ ᴅɪᴅɴ'ᴛ sʟᴇᴘᴛ sɪɴᴄᴇ​:</b> <code>{}</code>".format(
+        update.effective_message.reply_photo(
+            START_IMG,
+            caption="ɪ ᴀᴍ ᴀʟɪᴠᴇ ʙᴀʙʏ !\n<b>ɪ ᴅɪᴅɴ'ᴛ sʟᴇᴘᴛ sɪɴᴄᴇ​:</b> <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
@@ -351,28 +348,82 @@ def help_button(update, context):
 
 
 @run_async
-def Aaru_about_callback(update: Update, context: CallbackContext):
+def Fallen_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "fallen_":
         query.message.edit_text(
-            text="""*💔 ʜᴇʏ,\n\n  ᴛʜɪs ɪs *[𝐌𝐈𝐒𝐒-𝐀𝐀𝐑𝐔🌹𝐑𝐎𝐁𝐎𝐓](t.me/MISS_AARU_X_ROBOT)\n\n*ᴀ ᴘᴏᴡᴇʀꜰᴜʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ʙᴜɪʟᴛ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴇᴀꜱɪʟʏ ᴀɴᴅ ᴛᴏ ᴘʀᴏᴛᴇᴄᴛ ʏᴏᴜʀ ɢʀᴏᴜᴘ ꜰʀᴏᴍ ꜱᴄᴀᴍᴍᴇʀꜱ ᴀɴᴅ ꜱᴘᴀᴍᴍᴇʀꜱ. *\n\nɪ ʜᴀᴠᴇ ᴛʜᴇ ɴᴏʀᴍᴀʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢɪɴɢ ꜰᴜɴᴄᴛɪᴏɴꜱ ʟɪᴋᴇ ꜰʟᴏᴏᴅ ᴄᴏɴᴛʀᴏʟ, ᴀ ᴡᴀʀɴɪɴɢ ꜱʏꜱᴛᴇᴍ ᴇᴛᴄ ʙᴜᴛ ɪ ᴍᴀɪɴʟʏ ʜᴀᴠᴇ ᴛʜᴇ ᴀᴅᴠᴀɴᴄᴇᴅ ᴀɴᴅ ʜᴀɴᴅʏ ᴀɴᴛɪꜱᴘᴀᴍ ꜱʏꜱᴛᴇᴍ ᴀɴᴅ ᴛʜᴇ ʙᴀɴɴɪɴɢ ꜱʏꜱᴛᴇᴍ ᴡʜɪᴄʜ ꜱᴀꜰᴇɢᴀᴜʀᴅꜱ ᴀɴᴅ ʜᴇʟᴘꜱ ʏᴏᴜʀ ɢʀᴏᴜᴘ ꜰʀᴏᴍ ꜱᴘᴀᴍᴍᴇʀꜱ.\n\n👀 ᴡʜᴀᴛ ᴄᴀɴ ɪ ᴅᴏ :\n\n➲  ɪ ᴄᴀɴ ʀᴇꜱᴛʀɪᴄᴛ ᴜꜱᴇʀꜱ.\n\n➲  ɪ ᴄᴀɴ ɢʀᴇᴇᴛ ᴜꜱᴇʀꜱ ᴡɪᴛʜ ᴄᴜꜱᴛᴏᴍɪᴢᴀʙʟᴇ ᴡᴇʟᴄᴏᴍᴇ ᴍᴇꜱꜱᴀɢᴇꜱ ᴀɴᴅ ᴇᴠᴇɴ ꜱᴇᴛ ᴀ ɢʀᴏᴜᴘ'ꜱ ʀᴜʟᴇꜱ.\n\n➲  ɪ ᴄᴀɴ ᴡᴀʀɴ ᴜꜱᴇʀꜱ ᴜɴᴛɪʟ ᴛʜᴇʏ ʀᴇᴀᴄʜ ᴍᴀx ᴡᴀʀɴꜱ, ᴡɪᴛʜ ᴇᴀᴄʜ ᴘʀᴇᴅᴇꜰɪɴᴇᴅ ᴀᴄᴛɪᴏɴꜱ ꜱᴜᴄʜ ᴀꜱ ʙᴀɴ, ᴍᴜᴛᴇ, ᴋɪᴄᴋ, ᴇᴛᴄ.\n\n➲  ɪ ʜᴀᴠᴇ ᴀɴ ᴀᴅᴠᴀɴᴄᴇᴅ ᴀɴᴛɪ-ꜰʟᴏᴏᴅ ꜱʏꜱᴛᴇᴍ.\n\n➲  ɪ ʜᴀᴠᴇ ᴀ ɴᴏᴛᴇ ᴋᴇᴇᴘɪɴɢ ꜱʏꜱᴛᴇᴍ, ʙʟᴀᴄᴋʟɪꜱᴛꜱ, ᴀɴᴅ ᴇᴠᴇɴ ᴘʀᴇᴅᴇᴛᴇʀᴍɪɴᴇᴅ ʀᴇᴘʟɪᴇꜱ ᴏɴ ᴄᴇʀᴛᴀɪɴ ᴋᴇʏᴡᴏʀᴅꜱ.\n\n➲  ɪ ᴄʜᴇᴄᴋ ꜰᴏʀ ᴀᴅᴍɪɴꜱ ᴘᴇʀᴍɪꜱꜱɪᴏɴꜱ ʙᴇꜰᴏʀᴇ ᴇxᴇᴄᴜᴛɪɴɢ ᴀɴʏ ᴄᴏᴍᴍᴀɴᴅ ᴀɴᴅ ᴍᴏʀᴇ ꜱᴛᴜꜰꜰꜱ.\n\n\n* ɪꜰ ʏᴏᴜ ᴀʙᴏᴜᴛ𝐀𝐀𝐑𝐔𝐑𝐎𝐁𝐎𝐓 𝐀𝐀𝐑𝐔𝐑𝐎𝐁𝐎𝐓 ᴛʜᴇɴ ᴄᴏɴᴛᴀᴄᴛ ᴜꜱ ᴀᴛ *[ꜱᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ](t.me/love_birds_group) *\n\nᴍᴀᴅᴇ ᴡɪᴛʜ 🖤 ʙʏ *[❛-𝐌𝐑'𝐁𝐀𝐍𝐍𝐀 🚬 𝐊𝐈𝐍𝐆-𝐱𝐃 °](https://t.me/BANNA_XD)""",
+            text=f"*ʜᴇʏ,*🥀\n  *ᴛʜɪs ɪs {dispatcher.bot.first_name}*"
+            "\n*ᴀ ᴘᴏᴡᴇʀꜰᴜʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ʙᴜɪʟᴛ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴇᴀꜱɪʟʏ ᴀɴᴅ ᴛᴏ ᴘʀᴏᴛᴇᴄᴛ ʏᴏᴜʀ ɢʀᴏᴜᴘ ꜰʀᴏᴍ ꜱᴄᴀᴍᴍᴇʀꜱ ᴀɴᴅ ꜱᴘᴀᴍᴍᴇʀꜱ.*"
+            "\n*ᴡʀɪᴛᴛᴇɴ ɪɴ ᴩʏᴛʜᴏɴ ᴡɪᴛʜ sǫʟᴀʟᴄʜᴇᴍʏ ᴀɴᴅ ᴍᴏɴɢᴏᴅʙ ᴀs ᴅᴀᴛᴀʙᴀsᴇ.*"
+            "\n\n➲  ɪ ᴄᴀɴ ʀᴇꜱᴛʀɪᴄᴛ ᴜꜱᴇʀꜱ."
+            "\n➲  ɪ ʜᴀᴠᴇ ᴀɴ ᴀᴅᴠᴀɴᴄᴇᴅ ᴀɴᴛɪ-ꜰʟᴏᴏᴅ ꜱʏꜱᴛᴇᴍ."
+            "\n➲  ɪ ᴄᴀɴ ɢʀᴇᴇᴛ ᴜꜱᴇʀꜱ ᴡɪᴛʜ ᴄᴜꜱᴛᴏᴍɪᴢᴀʙʟᴇ ᴡᴇʟᴄᴏᴍᴇ ᴍᴇꜱꜱᴀɢᴇꜱ ᴀɴᴅ ᴇᴠᴇɴ ꜱᴇᴛ ᴀ ɢʀᴏᴜᴘ'ꜱ ʀᴜʟᴇꜱ."
+            "\n➲  ɪ ᴄᴀɴ ᴡᴀʀɴ ᴜꜱᴇʀꜱ ᴜɴᴛɪʟ ᴛʜᴇʏ ʀᴇᴀᴄʜ ᴍᴀx ᴡᴀʀɴꜱ, ᴡɪᴛʜ ᴇᴀᴄʜ ᴘʀᴇᴅᴇꜰɪɴᴇᴅ ᴀᴄᴛɪᴏɴꜱ ꜱᴜᴄʜ ᴀꜱ ʙᴀɴ, ᴍᴜᴛᴇ, ᴋɪᴄᴋ, ᴇᴛᴄ."
+            "\n➲  ɪ ʜᴀᴠᴇ ᴀ ɴᴏᴛᴇ ᴋᴇᴇᴘɪɴɢ ꜱʏꜱᴛᴇᴍ, ʙʟᴀᴄᴋʟɪꜱᴛꜱ, ᴀɴᴅ ᴇᴠᴇɴ ᴘʀᴇᴅᴇᴛᴇʀᴍɪɴᴇᴅ ʀᴇᴘʟɪᴇꜱ ᴏɴ ᴄᴇʀᴛᴀɪɴ ᴋᴇʏᴡᴏʀᴅꜱ."
+            f"\n\n➻ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴs ɢɪᴠᴇɴ ʙᴇʟᴏᴡ ғᴏʀ ɢᴇᴛᴛɪɴɢ ʙᴀsɪᴄ ʜᴇʟᴩ ᴀɴᴅ ɪɴғᴏ ᴀʙᴏᴜᴛ {dispatcher.bot.first_name}.",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
-                 [
-                    InlineKeyboardButton(text="◁", callback_data="aaru_back")
-                 ]
+                    [
+                        InlineKeyboardButton(
+                            text="sᴜᴩᴩᴏʀᴛ", callback_data="fallen_support"
+                        ),
+                        InlineKeyboardButton(
+                            text="ᴄᴏᴍᴍᴀɴᴅs", callback_data="help_back"
+                        ),
+                    ],
+                    [
+                        InlineKeyboardButton(
+                            text="ᴅᴇᴠᴇʟᴏᴩᴇʀ", url=f"https://t.me/{OWNER_USERNAME}"
+                        ),
+                        InlineKeyboardButton(
+                            text="sᴏᴜʀᴄᴇ",
+                            url="https://github.com/AnonymousR1025/FallenRobot",
+                        ),
+                    ],
+                    [
+                        InlineKeyboardButton(text="◁", callback_data="fallen_back"),
+                    ],
                 ]
             ),
         )
-    elif query.data == "aaru_back":
+    elif query.data == "fallen_support":
         query.message.edit_text(
-                PM_START_TEXT,
-                reply_markup=InlineKeyboardMarkup(buttons),
-                parse_mode=ParseMode.MARKDOWN,
-                timeout=60,
-                disable_web_page_preview=False,
+            text="*๏ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴs ɢɪᴠᴇɴ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ʜᴇʟᴩ ᴀɴᴅ ᴍᴏʀᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴍᴇ.*"
+            f"\n\nɪғ ʏᴏᴜ ғᴏᴜɴᴅ ᴀɴʏ ʙᴜɢ ɪɴ {dispatcher.bot.first_name} ᴏʀ ɪғ ʏᴏᴜ ᴡᴀɴɴᴀ ɢɪᴠᴇ ғᴇᴇᴅʙᴀᴄᴋ ᴀʙᴏᴜᴛ ᴛʜᴇ {dispatcher.bot.first_name}, ᴩʟᴇᴀsᴇ ʀᴇᴩᴏʀᴛ ɪᴛ ᴀᴛ sᴜᴩᴩᴏʀᴛ ᴄʜᴀᴛ.",
+            parse_mode=ParseMode.MARKDOWN,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton(
+                            text="sᴜᴩᴩᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"
+                        ),
+                        InlineKeyboardButton(
+                            text="ᴜᴩᴅᴀᴛᴇs", url=f"https://t.me/{SUPPORT_CHAT}"
+                        ),
+                    ],
+                    [
+                        InlineKeyboardButton(
+                            text="ᴅᴇᴠᴇʟᴏᴩᴇʀ", url="https://t.me/anonymous_was_bot"
+                        ),
+                        InlineKeyboardButton(
+                            text="ɢɪᴛʜᴜʙ", url="https://github.com/AnonymousR1025"
+                        ),
+                    ],
+                    [
+                        InlineKeyboardButton(text="◁", callback_data="fallen_"),
+                    ],
+                ]
+            ),
+        )
+    elif query.data == "fallen_back":
+        query.message.edit_text(
+            PM_START_TEXT.format(dispatcher.bot.first_name),
+            reply_markup=InlineKeyboardMarkup(buttons),
+            parse_mode=ParseMode.MARKDOWN,
+            timeout=60,
+            disable_web_page_preview=False,
         )
 
 
@@ -381,25 +432,22 @@ def Source_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text="""*ʜᴇʏ,*\n\n*𝐌𝐈𝐒𝐒 𝐀𝐀𝐑𝐔𝐑𝐎𝐁𝐎𝐓 *\n\n*ʜᴇʀᴇ ɪs ᴍʏ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ :* [ɢɪᴛʜᴜʙ](https://github.com/BANNA-XD143/AaruRobot)\n\n*ᴍʏ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ɪs ɪɴ ᴅᴇᴠᴇʟᴏᴘᴍᴇɴᴛ ᴀɴᴅ ɴᴏᴛ ᴄᴏᴍᴘʟᴇᴛᴇᴅ ʏᴇᴛ*\n*sᴏ ɪғ ʏᴏᴜ ғᴏᴜɴᴅ ᴀɴʏ ʙᴜɢ ᴏʀ ɪғ ʏᴏᴜ ᴡᴀɴɴᴀ ʀᴇǫᴜᴇsᴛ ᴀɴʏ ғᴇᴀᴛᴜʀᴇ, ᴩʟᴇᴀsᴇ ʟᴇᴛ ᴜs ᴋɴᴏᴡ ᴀᴛ* [𝐌𝐈𝐒𝐒-𝐀𝐀𝐑𝐔𝐑𝐎𝐁𝐎𝐓](https://t.me/love_birds_group) *ᴏʀ ʏᴏᴜ ᴄᴀɴ ᴄᴏɴᴛᴀᴄᴛ ᴍʏ ᴅᴇᴠᴇʟᴏᴩᴇʀ :* [❛-𝐌𝐑'𝐁𝐀𝐍𝐍𝐀 🚬 𝐊𝐈𝐍𝐆-𝐱𝐃 °](https://t.me/BANNA_XD)""",
+            text="""*ʜᴇʏ,*\n\n*ᴛʜɪs ɪs ғᴀʟʟᴇɴ ✘ ʀᴏʙᴏᴛ*\n\n*ʜᴇʀᴇ ɪs ᴍʏ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ :* [ɢɪᴛʜᴜʙ](https://github.com/AnonymousR1025/FallenRobot)\n\n*ᴍʏ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ɪs ɪɴ ᴅᴇᴠᴇʟᴏᴘᴍᴇɴᴛ ᴀɴᴅ ɴᴏᴛ ᴄᴏᴍᴘʟᴇᴛᴇᴅ ʏᴇᴛ*\n*sᴏ ɪғ ʏᴏᴜ ғᴏᴜɴᴅ ᴀɴʏ ʙᴜɢ ᴏʀ ɪғ ʏᴏᴜ ᴡᴀɴɴᴀ ʀᴇǫᴜᴇsᴛ ᴀɴʏ ғᴇᴀᴛᴜʀᴇ, ᴩʟᴇᴀsᴇ ʟᴇᴛ ᴜs ᴋɴᴏᴡ ᴀᴛ* [ᴅᴇᴠɪʟs ʜᴇᴀᴠᴇɴ](https://t.me/DevilsHeavenMF) *ᴏʀ ʏᴏᴜ ᴄᴀɴ ᴄᴏɴᴛᴀᴄᴛ ᴍʏ ᴅᴇᴠᴇʟᴏᴩᴇʀ :* [𝝙𝗡𝗢𝗡𝗬𝗠𝗢𝗨𝗦](https://t.me/anonymous_was_bot)""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [
-                 [
-                    InlineKeyboardButton(text="◁", callback_data="source_back")
-                 ]
-                ]
+                [[InlineKeyboardButton(text="◁", callback_data="source_back")]]
             ),
         )
     elif query.data == "source_back":
         query.message.edit_text(
-                PM_START_TEXT,
-                reply_markup=InlineKeyboardMarkup(buttons),
-                parse_mode=ParseMode.MARKDOWN,
-                timeout=60,
-                disable_web_page_preview=False,
+            PM_START_TEXT.format(dispatcher.bot.first_name),
+            reply_markup=InlineKeyboardMarkup(buttons),
+            parse_mode=ParseMode.MARKDOWN,
+            timeout=60,
+            disable_web_page_preview=False,
         )
+
 
 @run_async
 def get_help(update: Update, context: CallbackContext):
@@ -433,7 +481,9 @@ def get_help(update: Update, context: CallbackContext):
                     [
                         InlineKeyboardButton(
                             text="ᴏᴩᴇɴ ɪɴ ᴩʀɪᴠᴀᴛᴇ",
-                            url="https://t.me/{}?start=help".format(context.bot.username),
+                            url="https://t.me/{}?start=help".format(
+                                context.bot.username
+                            ),
                         )
                     ],
                     [
@@ -441,7 +491,7 @@ def get_help(update: Update, context: CallbackContext):
                             text="ᴏᴩᴇɴ ʜᴇʀᴇ",
                             callback_data="help_back",
                         )
-                    ]
+                    ],
                 ]
             ),
         )
@@ -634,7 +684,7 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 5191956205 and DONATION_LINK:
+        if OWNER_ID != 1356469075 and DONATION_LINK:
             update.effective_message.reply_text(
                 "You can also donate to the person currently running me "
                 "[here]({})".format(DONATION_LINK),
@@ -682,7 +732,11 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.send_photo(f"@{SUPPORT_CHAT}", "https://telegra.ph/file/395d6af16f462c011b19b.jpg", caption="𝐌𝐈𝐒𝐒🌹𝐀𝐀𝐑𝐔 ɪs ᴀʟɪᴠᴇ !\n\nᴍᴀᴅᴇ ᴡɪᴛʜ 🖤 ʙʏ @BANNA_XD 🥀")
+            dispatcher.bot.send_photo(
+                f"@{SUPPORT_CHAT}",
+                "https://telegra.ph/file/36be820a8775f0bfc773e.jpg",
+                caption="ғᴀʟʟᴇɴ ✘ ʀᴏʙᴏᴛ ɪs ᴀʟɪᴠᴇ !\n\nᴍᴀᴅᴇ ᴡɪᴛʜ 🖤 ʙʏ ᴀɴᴏɴʏᴍᴏᴜs 🥀",
+            )
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
@@ -699,8 +753,12 @@ def main():
     settings_handler = CommandHandler("settings", get_settings)
     settings_callback_handler = CallbackQueryHandler(settings_button, pattern=r"stngs_")
 
-    about_callback_handler = CallbackQueryHandler(Aaru_about_callback, pattern=r"aaru_")
-    source_callback_handler = CallbackQueryHandler(Source_about_callback, pattern=r"source_")
+    about_callback_handler = CallbackQueryHandler(
+        Fallen_about_callback, pattern=r"fallen_"
+    )
+    source_callback_handler = CallbackQueryHandler(
+        Source_about_callback, pattern=r"source_"
+    )
 
     donate_handler = CommandHandler("donate", donate)
     migrate_handler = MessageHandler(Filters.status_update.migrate, migrate_chats)
@@ -740,7 +798,7 @@ def main():
 
 
 if __name__ == "__main__":
-    LOGGER.info("Aaru Successfully loaded modules: " + str(ALL_MODULES))
+    LOGGER.info("Successfully loaded modules: " + str(ALL_MODULES))
     telethn.start(bot_token=TOKEN)
     pbot.start()
     main()
