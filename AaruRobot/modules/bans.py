@@ -29,7 +29,7 @@ from AaruRobot.modules.helper_funcs.chat_status import (
 )
 from AaruRobot.modules.helper_funcs.extraction import extract_user_and_text
 from AaruRobot.modules.helper_funcs.string_handling import extract_time
-from AaryRobot.modules.log_channel import gloggable, loggable
+from AaruRobot.modules.log_channel import gloggable, loggable
 
 
 @run_async
