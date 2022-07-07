@@ -1,7 +1,7 @@
-# Module to blacklist users and prevent them from using commands by @TheRealPhoenix
+# Module to blacklist users and prevent them from using commands by @BANNA_XD
 import html
-import AyraRobot.modules.sql.blacklistusers_sql as sql
-from AyraRobot import (
+import AaruRobot.modules.sql.blacklistusers_sql as sql
+from AaruRobot import (
     DEV_USERS,
     OWNER_ID,
     DRAGONS,
@@ -10,12 +10,12 @@ from AyraRobot import (
     WOLVES,
     dispatcher,
 )
-from AyraRobot.modules.helper_funcs.chat_status import dev_plus
-from AyraRobot.modules.helper_funcs.extraction import (
+from AaruRobot.modules.helper_funcs.chat_status import dev_plus
+from AaruRobot.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from AyraRobot.modules.log_channel import gloggable
+from AaruRobot.modules.log_channel import gloggable
 from telegram import ParseMode, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, run_async
