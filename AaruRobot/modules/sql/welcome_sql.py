@@ -2,8 +2,8 @@ import random
 import threading
 from typing import Union
 
-from AyraRobot.modules.helper_funcs.msg_types import Types
-from AyraRobot.modules.sql import BASE, SESSION
+from AaruRobot.modules.helper_funcs.msg_types import Types
+from AaruRobot.modules.sql import BASE, SESSION
 from sqlalchemy import BigInteger, Boolean, Column, Integer, String, UnicodeText
 
 DEFAULT_WELCOME = "Hey {first}, how are you?"
