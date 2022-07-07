@@ -6,9 +6,9 @@ from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, Filters, run_async
 from telegram.utils.helpers import mention_html
 
-from AyraRobot import DRAGONS, dispatcher
-from AyraRobot.modules.disable import DisableAbleCommandHandler
-from AyraRobot.modules.helper_funcs.chat_status import (
+from AaruRobot import DRAGONS, dispatcher
+from AaruRobot.modules.disable import DisableAbleCommandHandler
+from AaruRobot.modules.helper_funcs.chat_status import (
     bot_admin,
     can_pin,
     can_promote,
@@ -17,13 +17,13 @@ from AyraRobot.modules.helper_funcs.chat_status import (
     ADMIN_CACHE,
 )
 
-from AyraRobot.modules.helper_funcs.admin_rights import user_can_changeinfo, user_can_promote
-from AyraRobot.modules.helper_funcs.extraction import (
+from AaruRobot.modules.helper_funcs.admin_rights import user_can_changeinfo, user_can_promote
+from AaruRobot.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from AyraRobot.modules.log_channel import loggable
-from AyraRobot.modules.helper_funcs.alternate import send_message
+from AaruRobot.modules.log_channel import loggable
+from AaruRobot.modules.helper_funcs.alternate import send_message
 
 
 @bot_admin
