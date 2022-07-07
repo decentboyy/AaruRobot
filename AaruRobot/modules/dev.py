@@ -5,7 +5,7 @@ import sys
 from contextlib import suppress
 from time import sleep
 
-import AyraRobot
+import AaruRobot
 
 from AaruRobot import dispatcher
 from AaruRobot.modules.helper_funcs.chat_status import dev_plus
