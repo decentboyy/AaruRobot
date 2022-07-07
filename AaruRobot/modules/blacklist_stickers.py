@@ -2,7 +2,7 @@ import html
 from typing import Optional
 
 import AaruRobot.modules.sql.blsticker_sql as sql
-from AaryRobot import LOGGER, dispatcher
+from AaruRobot import LOGGER, dispatcher
 from AaruRobot.modules.connection import connected
 from AaruRobot.modules.disable import DisableAbleCommandHandler
 from AaruRobot.modules.helper_funcs.alternate import send_message
