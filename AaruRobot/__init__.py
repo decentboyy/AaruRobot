@@ -190,7 +190,7 @@ else:
 
 
 updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
-telethn = TelegramClient("Ayra", API_ID, API_HASH)
+telethn = TelegramClient("Aaru", API_ID, API_HASH)
 
 pbot = Client("AaruRobot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
 dispatcher = updater.dispatcher
