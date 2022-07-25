@@ -81,7 +81,7 @@ PM_START_TEXT = """
 buttons = [
     [
         InlineKeyboardButton(
-            text="•✯ ✗ ᴀᴅᴅ ᴍᴇ ᴍᴇʀɪ ᴊᴀᴀɴ ✯• ✗", url="https://t.me/MISS_AARU_X_ROBOT?startgroup=true"),
+            text="•✯ ✗ ᴀᴅᴅ ᴍᴇ ᴍᴇʀɪ ᴊᴀᴀɴ ✯• ✗", url="https://t.me/TrishaMusicBot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(
@@ -95,7 +95,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="•✩ sᴜᴘᴘᴏʀᴛ ✩•", url=f"https://t.me/LOVE_BIRDS_123"
+            text="•✩ sᴜᴘᴘᴏʀᴛ ✩•", url=f"https://t.me/JaiHindChatting"
         ),
         InlineKeyboardButton(
             text="•♡︎ ᴅᴇᴠᴇʟᴏᴘᴇʀ ♡︎•", url=f"https://t.me/BANNA_XD"
@@ -353,7 +353,7 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "fallen_":
         query.message.edit_text(
-            text="""*💔 ʜᴇʏ,\n\n  ᴛʜɪs ɪs *[𝐌𝐈𝐒𝐒-𝐀𝐀𝐑𝐔𝐑𝐎𝐁𝐎𝐓](t.me/MISS_AARU_X_ROBOT)\n\n*ᴀ ᴘᴏᴡᴇʀꜰᴜʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ʙᴜɪʟᴛ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴇᴀꜱɪʟʏ ᴀɴᴅ ᴛᴏ ᴘʀᴏᴛᴇᴄᴛ ʏᴏᴜʀ ɢʀᴏᴜᴘ ꜰʀᴏᴍ ꜱᴄᴀᴍᴍᴇʀꜱ ᴀɴᴅ ꜱᴘᴀᴍᴍᴇʀꜱ. *\n\nɪ ʜᴀᴠᴇ ᴛʜᴇ ɴᴏʀᴍᴀʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢɪɴɢ ꜰᴜɴᴄᴛɪᴏɴꜱ ʟɪᴋᴇ ꜰʟᴏᴏᴅ ᴄᴏɴᴛʀᴏʟ, ᴀ ᴡᴀʀɴɪɴɢ ꜱʏꜱᴛᴇᴍ ᴇᴛᴄ ʙᴜᴛ ɪ ᴍᴀɪɴʟʏ ʜᴀᴠᴇ ᴛʜᴇ ᴀᴅᴠᴀɴᴄᴇᴅ ᴀɴᴅ ʜᴀɴᴅʏ ᴀɴᴛɪꜱᴘᴀᴍ ꜱʏꜱᴛᴇᴍ ᴀɴᴅ ᴛʜᴇ ʙᴀɴɴɪɴɢ ꜱʏꜱᴛᴇᴍ ᴡʜɪᴄʜ ꜱᴀꜰᴇɢᴀᴜʀᴅꜱ ᴀɴᴅ ʜᴇʟᴘꜱ ʏᴏᴜʀ ɢʀᴏᴜᴘ ꜰʀᴏᴍ ꜱᴘᴀᴍᴍᴇʀꜱ.\n\n👀 ᴡʜᴀᴛ ᴄᴀɴ ɪ ᴅᴏ :\n\n➲  ɪ ᴄᴀɴ ʀᴇꜱᴛʀɪᴄᴛ ᴜꜱᴇʀꜱ.\n\n➲  ɪ ᴄᴀɴ ɢʀᴇᴇᴛ ᴜꜱᴇʀꜱ ᴡɪᴛʜ ᴄᴜꜱᴛᴏᴍɪᴢᴀʙʟᴇ ᴡᴇʟᴄᴏᴍᴇ ᴍᴇꜱꜱᴀɢᴇꜱ ᴀɴᴅ ᴇᴠᴇɴ ꜱᴇᴛ ᴀ ɢʀᴏᴜᴘ'ꜱ ʀᴜʟᴇꜱ.\n\n➲  ɪ ᴄᴀɴ ᴡᴀʀɴ ᴜꜱᴇʀꜱ ᴜɴᴛɪʟ ᴛʜᴇʏ ʀᴇᴀᴄʜ ᴍᴀx ᴡᴀʀɴꜱ, ᴡɪᴛʜ ᴇᴀᴄʜ ᴘʀᴇᴅᴇꜰɪɴᴇᴅ ᴀᴄᴛɪᴏɴꜱ ꜱᴜᴄʜ ᴀꜱ ʙᴀɴ, ᴍᴜᴛᴇ, ᴋɪᴄᴋ, ᴇᴛᴄ.\n\n➲  ɪ ʜᴀᴠᴇ ᴀɴ ᴀᴅᴠᴀɴᴄᴇᴅ ᴀɴᴛɪ-ꜰʟᴏᴏᴅ ꜱʏꜱᴛᴇᴍ.\n\n➲  ɪ ʜᴀᴠᴇ ᴀ ɴᴏᴛᴇ ᴋᴇᴇᴘɪɴɢ ꜱʏꜱᴛᴇᴍ, ʙʟᴀᴄᴋʟɪꜱᴛꜱ, ᴀɴᴅ ᴇᴠᴇɴ ᴘʀᴇᴅᴇᴛᴇʀᴍɪɴᴇᴅ ʀᴇᴘʟɪᴇꜱ ᴏɴ ᴄᴇʀᴛᴀɪɴ ᴋᴇʏᴡᴏʀᴅꜱ.\n\n➲  ɪ ᴄʜᴇᴄᴋ ꜰᴏʀ ᴀᴅᴍɪɴꜱ ᴘᴇʀᴍɪꜱꜱɪᴏɴꜱ ʙᴇꜰᴏʀᴇ ᴇxᴇᴄᴜᴛɪɴɢ ᴀɴʏ ᴄᴏᴍᴍᴀɴᴅ ᴀɴᴅ ᴍᴏʀᴇ ꜱᴛᴜꜰꜰꜱ.\n\n\n* ɪꜰ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇꜱᴛɪᴏɴ ᴀʙᴏᴜᴛ 𝐌𝐈𝐒𝐒 𝐀𝐀𝐑𝐔 𝐑𝐎𝐁𝐎𝐓 ᴛʜᴇɴ ᴄᴏɴᴛᴀᴄᴛ ᴜꜱ ᴀᴛ *[ꜱᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ](t.me/LOVE_BIRDS_123) *\n\nᴍᴀᴅᴇ ᴡɪᴛʜ 🖤 ʙʏ *[❛-𝐌𝐑'𝐁𝐀𝐍𝐍𝐀 🚬 𝐊𝐈𝐍𝐆-𝐱𝐃 °](https://t.me/BANNA_XD)""",
+            text="""*💔 ʜᴇʏ,\n\n  ᴛʜɪs ɪs *[𝐓𝐑𝐈𝐒𝐇𝐀🇽 𝐑𝐎𝐁𝐎𝐓](t.me/TrishaMusicBot)\n\n*ᴀ ᴘᴏᴡᴇʀꜰᴜʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ʙᴜɪʟᴛ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴇᴀꜱɪʟʏ ᴀɴᴅ ᴛᴏ ᴘʀᴏᴛᴇᴄᴛ ʏᴏᴜʀ ɢʀᴏᴜᴘ ꜰʀᴏᴍ ꜱᴄᴀᴍᴍᴇʀꜱ ᴀɴᴅ ꜱᴘᴀᴍᴍᴇʀꜱ. *\n\nɪ ʜᴀᴠᴇ ᴛʜᴇ ɴᴏʀᴍᴀʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢɪɴɢ ꜰᴜɴᴄᴛɪᴏɴꜱ ʟɪᴋᴇ ꜰʟᴏᴏᴅ ᴄᴏɴᴛʀᴏʟ, ᴀ ᴡᴀʀɴɪɴɢ ꜱʏꜱᴛᴇᴍ ᴇᴛᴄ ʙᴜᴛ ɪ ᴍᴀɪɴʟʏ ʜᴀᴠᴇ ᴛʜᴇ ᴀᴅᴠᴀɴᴄᴇᴅ ᴀɴᴅ ʜᴀɴᴅʏ ᴀɴᴛɪꜱᴘᴀᴍ ꜱʏꜱᴛᴇᴍ ᴀɴᴅ ᴛʜᴇ ʙᴀɴɴɪɴɢ ꜱʏꜱᴛᴇᴍ ᴡʜɪᴄʜ ꜱᴀꜰᴇɢᴀᴜʀᴅꜱ ᴀɴᴅ ʜᴇʟᴘꜱ ʏᴏᴜʀ ɢʀᴏᴜᴘ ꜰʀᴏᴍ ꜱᴘᴀᴍᴍᴇʀꜱ.\n\n👀 ᴡʜᴀᴛ ᴄᴀɴ ɪ ᴅᴏ :\n\n➲  ɪ ᴄᴀɴ ʀᴇꜱᴛʀɪᴄᴛ ᴜꜱᴇʀꜱ.\n\n➲  ɪ ᴄᴀɴ ɢʀᴇᴇᴛ ᴜꜱᴇʀꜱ ᴡɪᴛʜ ᴄᴜꜱᴛᴏᴍɪᴢᴀʙʟᴇ ᴡᴇʟᴄᴏᴍᴇ ᴍᴇꜱꜱᴀɢᴇꜱ ᴀɴᴅ ᴇᴠᴇɴ ꜱᴇᴛ ᴀ ɢʀᴏᴜᴘ'ꜱ ʀᴜʟᴇꜱ.\n\n➲  ɪ ᴄᴀɴ ᴡᴀʀɴ ᴜꜱᴇʀꜱ ᴜɴᴛɪʟ ᴛʜᴇʏ ʀᴇᴀᴄʜ ᴍᴀx ᴡᴀʀɴꜱ, ᴡɪᴛʜ ᴇᴀᴄʜ ᴘʀᴇᴅᴇꜰɪɴᴇᴅ ᴀᴄᴛɪᴏɴꜱ ꜱᴜᴄʜ ᴀꜱ ʙᴀɴ, ᴍᴜᴛᴇ, ᴋɪᴄᴋ, ᴇᴛᴄ.\n\n➲  ɪ ʜᴀᴠᴇ ᴀɴ ᴀᴅᴠᴀɴᴄᴇᴅ ᴀɴᴛɪ-ꜰʟᴏᴏᴅ ꜱʏꜱᴛᴇᴍ.\n\n➲  ɪ ʜᴀᴠᴇ ᴀ ɴᴏᴛᴇ ᴋᴇᴇᴘɪɴɢ ꜱʏꜱᴛᴇᴍ, ʙʟᴀᴄᴋʟɪꜱᴛꜱ, ᴀɴᴅ ᴇᴠᴇɴ ᴘʀᴇᴅᴇᴛᴇʀᴍɪɴᴇᴅ ʀᴇᴘʟɪᴇꜱ ᴏɴ ᴄᴇʀᴛᴀɪɴ ᴋᴇʏᴡᴏʀᴅꜱ.\n\n➲  ɪ ᴄʜᴇᴄᴋ ꜰᴏʀ ᴀᴅᴍɪɴꜱ ᴘᴇʀᴍɪꜱꜱɪᴏɴꜱ ʙᴇꜰᴏʀᴇ ᴇxᴇᴄᴜᴛɪɴɢ ᴀɴʏ ᴄᴏᴍᴍᴀɴᴅ ᴀɴᴅ ᴍᴏʀᴇ ꜱᴛᴜꜰꜰꜱ.\n\n\n* ɪꜰ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇꜱᴛɪᴏɴ ᴀʙᴏᴜᴛ 𝐓𝐑𝐈𝐒𝐇𝐀🇽 𝐑𝐎𝐁𝐎𝐓 ᴛʜᴇɴ ᴄᴏɴᴛᴀᴄᴛ ᴜꜱ ᴀᴛ *[ꜱᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ](t.me/JaiHindChatting) *\n\nᴍᴀᴅᴇ ᴡɪᴛʜ 🖤 ʙʏ *[⏤͟͟͞͞x𝐃🥀| 𓆩 𝐂𝐎𝐃𝐄𝐑 𓆪 |∘𖣘︎⃞⃟🔥](https://t.me/LEGEND_CODER)""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -379,7 +379,7 @@ def Source_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text="""*ʜᴇʏ,*\n\n*ᴛʜɪs ɪs 𝐌𝐈𝐒𝐒💥𝐀𝐀𝐑𝐔-𝐑𝐎𝐁𝐎𝐓 *\n\n*ʜᴇʀᴇ ɪs ᴍʏ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ :* [ɢɪᴛʜᴜʙ](https://github.com/BANNA-XD143/AaruRobot)\n\n*ᴍʏ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ɪs ɪɴ ᴅᴇᴠᴇʟᴏᴘᴍᴇɴᴛ ᴀɴᴅ ɴᴏᴛ ᴄᴏᴍᴘʟᴇᴛᴇᴅ ʏᴇᴛ*\n*sᴏ ɪғ ʏᴏᴜ ғᴏᴜɴᴅ ᴀɴʏ ʙᴜɢ ᴏʀ ɪғ ʏᴏᴜ ᴡᴀɴɴᴀ ʀᴇǫᴜᴇsᴛ ᴀɴʏ ғᴇᴀᴛᴜʀᴇ, ᴩʟᴇᴀsᴇ ʟᴇᴛ ᴜs ᴋɴᴏᴡ ᴀᴛ* [𝐌𝐈𝐒𝐒-𝐀𝐀𝐑𝐔𝐑𝐎𝐁𝐎𝐓](https://t.me/LOVE_BIRDS_123) *ᴏʀ ʏᴏᴜ ᴄᴀɴ ᴄᴏɴᴛᴀᴄᴛ ᴍʏ ᴅᴇᴠᴇʟᴏᴩᴇʀ :* [❛-𝐌𝐑'𝐁𝐀𝐍𝐍𝐀 🚬 𝐊𝐈𝐍𝐆-𝐱𝐃 °](https://t.me/BANNA_XD)""",
+            text="""*ʜᴇʏ,*\n\n*ᴛʜɪs ɪs 𝐓𝐑𝐈𝐒𝐇𝐀🇽 𝐑𝐎𝐁𝐎𝐓 *\n\n*ʜᴇʀᴇ ɪs ᴍʏ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ :* [ɢɪᴛʜᴜʙ](https://github.com/BANNA-XD143/AaruRobot)\n\n*ᴍʏ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ɪs ɪɴ ᴅᴇᴠᴇʟᴏᴘᴍᴇɴᴛ ᴀɴᴅ ɴᴏᴛ ᴄᴏᴍᴘʟᴇᴛᴇᴅ ʏᴇᴛ*\n*sᴏ ɪғ ʏᴏᴜ ғᴏᴜɴᴅ ᴀɴʏ ʙᴜɢ ᴏʀ ɪғ ʏᴏᴜ ᴡᴀɴɴᴀ ʀᴇǫᴜᴇsᴛ ᴀɴʏ ғᴇᴀᴛᴜʀᴇ, ᴩʟᴇᴀsᴇ ʟᴇᴛ ᴜs ᴋɴᴏᴡ ᴀᴛ* [𝐓𝐑𝐈𝐒𝐇𝐀🇽 𝐑𝐎𝐁𝐎𝐓](https://t.me/JaiHindChatting) *ᴏʀ ʏᴏᴜ ᴄᴀɴ ᴄᴏɴᴛᴀᴄᴛ ᴍʏ ᴅᴇᴠᴇʟᴏᴩᴇʀ :* [⏤͟͟͞͞x𝐃🥀| 𓆩 𝐂𝐎𝐃𝐄𝐑 𓆪 |∘𖣘︎⃞⃟🔥](https://t.me/LEGEND_CODER)""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -632,7 +632,7 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 5230222509 and DONATION_LINK:
+        if OWNER_ID != 5352398272 and DONATION_LINK:
             update.effective_message.reply_text(
                 "You can also donate to the person currently running me "
                 "[here]({})".format(DONATION_LINK),
@@ -680,7 +680,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.send_photo(f"@{SUPPORT_CHAT}", "https://telegra.ph/file/e2c5edda6542fbb7bc1f8.jpg", caption="𝐌𝐈𝐒𝐒 𝐀𝐀𝐑𝐔🥀𝐑𝐎𝐁𝐎𝐓 ɪs ᴀʟɪᴠᴇ !\n\nᴍᴀᴅᴇ ᴡɪᴛʜ 🖤 ʙʏ ❛-𝐌𝐑'𝐁𝐀𝐍𝐍𝐀 🚬 𝐊𝐈𝐍𝐆-𝐱𝐃 ° 🥀")
+            dispatcher.bot.send_photo(f"@{SUPPORT_CHAT}", "https://telegra.ph/file/e2c5edda6542fbb7bc1f8.jpg", caption="𝐓𝐑𝐈𝐒𝐇𝐀🥀𝐑𝐎𝐁𝐎𝐓 ɪs ᴀʟɪᴠᴇ !\n\nᴍᴀᴅᴇ ᴡɪᴛʜ 🖤 ʙʏ ⏤͟͟͞͞x𝐃🥀| 𓆩 𝐂𝐎𝐃𝐄𝐑 𓆪 |∘𖣘︎⃞⃟🔥🥀")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
