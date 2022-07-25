@@ -98,7 +98,7 @@ buttons = [
             text="•✩ sᴜᴘᴘᴏʀᴛ ✩•", url=f"https://t.me/JaiHindChatting"
         ),
         InlineKeyboardButton(
-            text="•♡︎ ᴅᴇᴠᴇʟᴏᴘᴇʀ ♡︎•", url=f"https://t.me/BANNA_XD"
+            text="•♡︎ ᴅᴇᴠᴇʟᴏᴘᴇʀ ♡︎•", url=f"https://t.me/LEGEND_CODER"
         ),
     ],
 ]
