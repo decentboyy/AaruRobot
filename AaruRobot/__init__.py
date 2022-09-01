@@ -2,11 +2,11 @@ import logging
 import os
 import sys
 import time
-import spamwatch
 
 import telegram.ext as tg
 from aiohttp import ClientSession
 from pyrogram import Client, errors
+from Python_ARQ import ARQ
 from telethon import TelegramClient
 
 StartTime = time.time()
