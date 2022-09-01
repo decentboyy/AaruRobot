@@ -13,9 +13,9 @@ Aaru = "https://telegra.ph/file/6ccab5bc360325388e2c4.jpg"
 async def repo(client, message):
     await message.reply_photo(
         photo=Ayra,
-        caption=f"""**ʜᴇʏ​ {message.from_user.mention()},\n\nɪ ᴀᴍ [ᴛʀɪsʜᴀ ✘ ʀᴏʙᴏᴛ-🇮🇳](t.me/TrishaMusicBot)**
+        caption=f"""**ʜᴇʏ​ {message.from_user.mention()},\n\nɪ ᴀᴍ [ᴀᴀʀᴜ ✘ ʀᴏʙᴏᴛ-🇮🇳](t.me/XD_CODER)**
 
-**» ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ​ :** [⏤͟͟͞͞x𝐃🥀| 𓆩 𝐂𝐎𝐃𝐄𝐑 𓆪 |∘𖣘︎⃞⃟🔥](tg://user?id=5352398272)
+**» ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ​ :** [⏤͟͟͞͞x𝐃🥀| 𓆩 𝐂𝐎𝐃𝐄𝐑 𓆪 |∘𖣘︎⃞⃟🔥](tg://user?id=5320093001)
 **» ᴩʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{y()}`
 **» ʟɪʙʀᴀʀʏ ᴠᴇʀsɪᴏɴ :** `{o}` 
 **» ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{s}` 
@@ -27,9 +27,9 @@ async def repo(client, message):
             [
                 [
                     InlineKeyboardButton(
-                        "• ᴅᴇᴠᴇʟᴏᴘᴇʀ •", url="tg://user?id=5352398272"), 
+                        "• ᴅᴇᴠᴇʟᴏᴘᴇʀ •", url="tg://user?id=5320093001"), 
                     InlineKeyboardButton(
-                        "• sᴏᴜʀᴄᴇ •", url="https://github.com/BANNA-XD143/AaruRobot")
+                        "• sᴏᴜʀᴄᴇ •", url="https://github.com/CODER-XD143/AaruRobot")
                 ]
             ]
         )
