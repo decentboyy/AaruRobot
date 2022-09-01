@@ -1,7 +1,7 @@
 {
-      "name": "𝔸𝕒ℝ𝕦🇽 ℝ𝕠𝔹𝕠𝕋",
+      "name": "𝐀𝐀𝐑𝐔🇽 𝐑𝐎𝐁𝐎𝐓",
       "description": "Telegram Group Management Bot.",
-      "logo": "https://telegra.ph//file/e4bff82ab3fbc72818adc.jpg",
+      "logo": "https://telegra.ph/file/bfa7fee0f000cf8b4ffe6.jpg",
       "keywords": [
          "telegram",
          "sexy",
@@ -9,7 +9,7 @@
          "manager",
          "Aaru"
       ],   
-   "repository": "https://github.com/BANNA-XD143/AaruRobot",
+   "repository": "https://github.com/CODER-XD143/AaruRobot",
    "addons": [
       {
          "options": {
@@ -42,7 +42,7 @@
       "OWNER_ID": {
          "description": "Your user ID as an integer.",
          "required": true,
-         "value": "5352398272"
+         "value": "5320093001"
       },
       "HEROKU_API_KEY": {
         "description": "Your Heroku API key, get it from 'https://dashboard.heroku.com/account'",
@@ -54,12 +54,12 @@
       },
       "OWNER_USERNAME": {
          "description": "Your username without the @",
-         "value": "LEGEND_CODER"
+         "value": "XD_CODER"
       },
       "SUPPORT_CHAT": {
          "description": "Your Telegram support group chat username where your users will go and bother you with shit But be like: MyGroupChatUsernameBlah. If this ever points to Fallen Support than consider you made an enemy.",
          "required": true,
-         "value": "JaiHindChatting"
+         "value": "IND_BRAND_CHAT"
       },
       "MONGO_DB_URI": {
          "description": "Required for database connections.",
@@ -69,12 +69,12 @@
       "EVENT_LOGS": {
          "description": "Event logs channel to note down important bot level events, recommend to make this public. ex: '-123456'",
          "required": true,
-         "value": "-1001774417977"
+         "value": "-1001797656964"
       },
       "JOIN_LOGGER": {
          "description": "A channel where bot will print who added it to what group, useful during debugging or spam handling.",
          "required": true,
-         "value": "-1001774417977"
+         "value": "-1001797656964"
       },      
       "CASH_API_KEY": {
          "description": "Required for currency converter. Get yours from https://www.alphavantage.co/support/#api-key",
@@ -94,7 +94,7 @@
       "DEV_USERS": {
          "description": "ID of users who are Devs of your bot (can use /py etc.). If you are a noob and would come and bother AARU Support then keep the current ID's here at they are and add yours.",
          "required": false,
-         "value": "5191956205"
+         "value": "5320093001"
       },
       "sw_api": {
          "description": "Spamwatch API Token, Get one from @SpamWatchBot.",
@@ -108,22 +108,22 @@
       "DRAGONS": {
          "description": "A space separated list of user IDs who you want to assign as sudo users.",
          "required": false,
-         "value": "5191956205"
+         "value": "5320093001"
       },
       "DEMONS": {
          "description": "A space separated list of user IDs who you wanna assign as support users(gban perms only).",
          "required": false,
-         "value": "5191956205"
+         "value": "5320093001"
       },
       "TIGERS": {
          "description": "A space separated list of user IDs who you wanna assign as tiger users.",
          "required": false,
-         "value": "5191956205"
+         "value": "5320093001"
       },
       "WOLVES": {
          "description": "A space separated list of user IDs who you want to assign as whitelisted - can't be banned with your bot.",
          "required": false,
-         "value": "5191956205"
+         "value": "5320093001"
       },
       "ENV": {
          "description": "Setting this to ANYTHING will enable environment variables. Leave it as it is",
@@ -161,7 +161,7 @@
       "DONATION_LINK": {
          "description": "Link where you would like to receive donations. If you are a noob, better leave it linking to BANNA_XD",
          "required": false,
-         "value": "https://t.me/BANNA_XD"
+         "value": "https://t.me/XD_CODER"
       },
       "DEL_CMDS": {
          "description": "Set this to True if you want to delete command messages from users who don't have the perms to run that command.",
@@ -170,7 +170,7 @@
       "AI_API_KEY": {
       "description": "Make your bot talk using Intellivoid's chatbot API, get your key from https://coffeehouse.intellivoid.net/",
          "required": false,
-         "value": ""
+         "value": "LDPICU-SSKXGN-JDTLOV-ZLRUXY-ARQ"
    },      
       "BAN_STICKER": {
          "description": "ID of the sticker you want to use when banning people.",
