@@ -23,11 +23,9 @@ from AaruRobot import (
     STRICT_GBAN,
     DRAGONS,
     SUPPORT_CHAT,
-    SPAMWATCH_SUPPORT_CHAT,
     DEMONS,
     TIGERS,
-    WOLVES,
-    sw,
+    WOLVES
     dispatcher,
 )
 from AaruRobot.modules.helper_funcs.chat_status import (

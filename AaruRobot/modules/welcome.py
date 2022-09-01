@@ -15,7 +15,6 @@ from AaruRobot import (
     DEMONS,
     TIGERS,
     WOLVES,
-    sw,
     dispatcher,
     JOIN_LOGGER
 )
