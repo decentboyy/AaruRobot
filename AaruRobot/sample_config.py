@@ -21,10 +21,10 @@ class Config(object):
     OWNER_USERNAME = "XD_CODER"
     SUPPORT_CHAT = "IND_BRAND_CHAT"  # Your own group for support, do not add the @
     JOIN_LOGGER = (
-        -1001797656964
+        -1001774417977
     )  # Prints any new group the bot is added to, prints just the name and ID.
     EVENT_LOGS = (
-        -1001797656964
+        -1001774417977
     )  # Prints information like gbans, sudo promotes, AI enabled disable states that may help in debugging and shit
 
     # RECOMMENDED
@@ -34,8 +34,8 @@ class Config(object):
     WEBHOOK = False
     INFOPIC = True
     URL = None
-    SPAMWATCH_API = "LDPICU-SSKXGN-JDTLOV-ZLRUXY-ARQ"  # go to support.spamwat.ch to get key
-    SPAMWATCH_SUPPORT_CHAT = "IND_BRAND_CHAT"
+    ARQ_API_KEY = "LJMETG-DPHBCX-DGHJCD-TMFIGB-ARQ"
+    ARQ_API_URL = "https://arq.hamker.in"
 
     # OPTIONAL
     ##List of id's -  (not usernames) for users which have sudo access to the bot.
