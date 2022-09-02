@@ -22,7 +22,6 @@ from AaruRobot import (
     WOLVES,
     INFOPIC,
     dispatcher,
-    sw,
 )
 from AaruRobot.__main__ import STATS, TOKEN, USER_INFO
 import AaruRobot.modules.sql.userinfo_sql as sql
