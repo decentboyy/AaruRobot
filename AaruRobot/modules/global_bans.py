@@ -25,7 +25,7 @@ from AaruRobot import (
     SUPPORT_CHAT,
     DEMONS,
     TIGERS,
-    WOLVES
+    WOLVES,
     dispatcher,
 )
 from AaruRobot.modules.helper_funcs.chat_status import (
