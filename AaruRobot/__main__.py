@@ -91,7 +91,7 @@ buttons = [
         InlineKeyboardButton(
             text="•✰ ᴀʙᴏᴜᴛ ᴍᴇ ✰•", callback_data=f"fallen_"),
         InlineKeyboardButton(
-            text="•✵ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ✵•", callback_data=f"https://github.com/CODER-XD143/AaruRobot"),
+            text="•✵ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ✵•", url="https://github.com/CODER-XD143/AaruRobot"),
     ],
     [
         InlineKeyboardButton(
