@@ -1,8 +1,8 @@
 import random
+from pyrogram import __version__ as pyrover
 from telethon import events, Button
 from telegram import __version__ as telever
 from telethon import __version__ as tlhver
-from pyrogram import __version__ as pyrover
 from AaruRobot import OWNER_USERNAME, SUPPORT_CHAT, dispatcher
 from AaruRobot.events import register
 from AaruRobot import telethn as tbot
@@ -28,5 +28,5 @@ async def awake(event):
     ]
   ran = random.choice(PHOTO)
   await tbot.send_file(event.chat_id, ran, caption=TEXT,  buttons=BUTTON)
-
-## Alive mod
+  
+  ##AARU ALIVE MOD
