@@ -522,8 +522,6 @@ __help__ = """
 
 *Self added information:* 
  ❍ /setme <text>*:* will set your info
- ❍ /me*:* will get your or another user's info.
-*Examples:* 💡
  ➩ /setme I am a wolf.
  ➩ /me @username(defaults to yours if no user specified)
 
@@ -560,7 +558,7 @@ dispatcher.add_handler(SET_ABOUT_HANDLER)
 dispatcher.add_handler(GET_ABOUT_HANDLER)
 
 __mod_name__ = "Iɴꜰᴏs"
-__command_list__ = ["setbio", "bio", "setme", "me", "info"]
+__command_list__ = ["setbio", "bio", "setme", "info"]
 __handlers__ = [
     ID_HANDLER,
     GIFID_HANDLER,

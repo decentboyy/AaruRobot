@@ -13,7 +13,7 @@ Aaru = "https://telegra.ph/file/6ccab5bc360325388e2c4.jpg"
 async def repo(client, message):
     await message.reply_photo(
         photo=Ayra,
-        caption=f"""**ʜᴇʏ​ {message.from_user.mention()},\n\nɪ ᴀᴍ [ᴀᴀʀᴜ ✘ ʀᴏʙᴏᴛ-🇮🇳](t.me/XD_CODER)**
+        caption=f"""**ʜᴇʏ​ {message.from_user.mention()},\n\nɪ ᴀᴍ [ᴀᴀʀᴜ ✘ ʀᴏʙᴏᴛ-🇮🇳](t.me/its_Coder_xD)**
 
 **» ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ​ :** [⏤͟͟͞͞x𝐃🥀| 𓆩 𝐂𝐎𝐃𝐄𝐑 𓆪 |∘𖣘︎⃞⃟🔥](tg://user?id=5320093001)
 **» ᴩʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{y()}`
@@ -27,7 +27,7 @@ async def repo(client, message):
             [
                 [
                     InlineKeyboardButton(
-                        "• ᴅᴇᴠᴇʟᴏᴘᴇʀ •", url="tg://user?id=5320093001"), 
+                        "• ᴅᴇᴠᴇʟᴏᴘᴇʀ •", url="tg://user?id=5808223211"), 
                     InlineKeyboardButton(
                         "• sᴏᴜʀᴄᴇ •", url="https://github.com/CODER-XD143/AaruRobot")
                 ]
