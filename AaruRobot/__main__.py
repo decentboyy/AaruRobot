@@ -8,7 +8,6 @@ from AaruRobot import (
     ALLOW_EXCL,
     OWNER_USERNAME,
     CERT_PATH,
-    DONATION_LINK,
     LOGGER,
     OWNER_ID,
     PORT,
