@@ -22,8 +22,8 @@ async def awake(event):
   TEXT += f"» **ᴘʏʀᴏɢʀᴀᴍ ᴠᴇʀsɪᴏɴ :** `{pyrover}` \n━━━━━━━━━━━━━━━━━\n\n"
   BUTTON = [
         [
-            Button.url("ʜᴇʟᴘ​", f"https://t.me/AARU_ROBOT?start=help"),
-            Button.url("sᴜᴘᴘᴏʀᴛ​", f"https://t.me/LOVE_X_BIRDS"),
+            Button.url("ʜᴇʟᴘ​", f"https://t.me/KNAYA_ROBOT?start=help"),
+            Button.url("sᴜᴘᴘᴏʀᴛ​", f"https://t.me/ARCH_SUPPORTS"),
         ]
     ]
   ran = random.choice(PHOTO)
