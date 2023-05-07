@@ -34,6 +34,8 @@ ENV = bool(os.environ.get("ENV", False))
 if ENV:
     API_ID = int(os.environ.get("API_ID", None))
     API_HASH = os.environ.get("API_HASH", None)
+    URL = os.environ.get("URL", "")  # Does not contain token
+    WEBHOOK = bool(os.environ.get("WEBHOOK", False))
     ALLOW_CHATS = os.environ.get("ALLOW_CHATS", True)
     ALLOW_EXCL = os.environ.get("ALLOW_EXCL", False)
     CASH_API_KEY = os.environ.get("CASH_API_KEY", None)
@@ -89,7 +91,7 @@ if ENV:
         raise Exception("Your whitelisted users list does not contain valid integers.")
 
 else:
-    from FallenRobot.config import Development as Config
+    from AaruRobot.config import Development as Config
 
     API_ID = Config.API_ID
     API_HASH = Config.API_HASH
@@ -101,6 +103,7 @@ else:
     EVENT_LOGS = Config.EVENT_LOGS
     INFOPIC = Config.INFOPIC
     LOAD = Config.LOAD
+    PORT = int(os.environ.get("PORT", 5000))
     MONGO_DB_URI = Config.MONGO_DB_URI
     NO_LOAD = Config.NO_LOAD
     START_IMG = Config.START_IMG
