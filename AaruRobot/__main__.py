@@ -12,8 +12,6 @@ from AaruRobot import (
     OWNER_ID,
     SUPPORT_CHAT,
     TOKEN,
-    URL,
-    WEBHOOK,
     dispatcher,
     StartTime,
     telethn,
