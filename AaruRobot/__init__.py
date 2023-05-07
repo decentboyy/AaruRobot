@@ -53,6 +53,7 @@ if ENV:
     TOKEN = os.environ.get("TOKEN", None)
     TIME_API_KEY = os.environ.get("TIME_API_KEY", None)
     WORKERS = int(os.environ.get("WORKERS", 8))
+    OWNER_USERNAME = os.environ.get("OWNER_USERNAME", "its_Coder_xD")
 
     try:
         OWNER_ID = int(os.environ.get("OWNER_ID", None))
