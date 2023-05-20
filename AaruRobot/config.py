@@ -14,27 +14,22 @@ class Config(object):
     # REQUIRED
     # Login to https://my.telegram.org and fill in these slots with the details given by it
 
-    API_ID = 123456  # integer value, dont use ""
-    API_HASH = "awoo"
-    TOKEN = "BOT_TOKEN"  # This var used to be API_KEY but it is now TOKEN, adjust accordingly.
-    OWNER_ID = 5856908645  # If you dont know, run the bot and do /id in your private chat with it, also an integer
-    OWNER_USERNAME = "its_Coder_xD"
-    SUPPORT_CHAT = "ARCH_SUPPORTS"  # Your own group for support, do not add the @
-    JOIN_LOGGER = (
-        -1001923845903
-    )  # Prints any new group the bot is added to, prints just the name and ID.
-    EVENT_LOGS = (
-        -1001923845903
-    )  # Prints information like gbans, sudo promotes, AI enabled disable states that may help in debugging and shit
-
+    API_ID = "17960471"
+    API_HASH = "1008e3fdc5337da248ad52b87af7969b"
+    TOKEN = "5541091861:AAGfKZro2l9OaO3O3rpGNyksFSDqtosuDTM"
+    OWNER_ID = "1943576105"
+    OWNER_USERNAME = "Doomed_out"
+    SUPPORT_CHAT = "Octave_support"
+    JOIN_LOGGER = "-1001778136057"
+    EVENT_LOGS = "-1001778136057"
     # RECOMMENDED
-    SQLALCHEMY_DATABASE_URI = "something://somewhat:user@hosturl:port/databasename"  # needed for any database modules
+    SQLALCHEMY_DATABASE_URI = "postgres://bbvwcytt:snKAKr7SeC2sg8gemWz5nEEmFi3dJIn1@mel.db.elephantsql.com/bbvwcytt"
     LOAD = []
     NO_LOAD = ["rss", "cleaner", "connection", "math"]
     WEBHOOK = False
     INFOPIC = True
     URL = None
-    ARQ_API_KEY = "LJMETG-DPHBCX-DGHJCD-TMFIGB-ARQ"
+    ARQ_API_KEY = "OCXZLH-ZJPPDA-SGRBWJ-TQQQZP-ARQ"
     ARQ_API_URL = "https://arq.hamker.in"
 
     # OPTIONAL
