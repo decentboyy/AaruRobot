@@ -1,7 +1,6 @@
 import os
 
 import requests
-import yt_dlp
 from pyrogram import filters
 from youtube_search import YoutubeSearch
 
